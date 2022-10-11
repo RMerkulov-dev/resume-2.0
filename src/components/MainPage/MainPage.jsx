@@ -1,0 +1,44 @@
+import Menu from '../../images/header/menu.png';
+import Home from '../../images/header/home.png';
+import HeroImage from '../../images/hero/developer.png';
+import Tel from '../../images/header/phone.png'
+import Mail from '../../images/header/mail.png'
+import Telegram from '../../images/header/telegram.png'
+import Download from '../../images/header/cv.png'
+import Resume from '../../cv/cv_roman merkulov.pdf'
+import { Link } from 'react-router-dom';
+import s from './MainPage.module.css';
+
+export const MainPage = () => {
+
+  return (
+    <>
+      <header className={s.header}>
+        <div className={s.container}>
+          <div className={s.headerContainer}>
+            <nav className={s.navigation}>
+              <button className={s.navBtn} type='button'><img className={s.iconHeader} src={Menu} alt='menu' /></button>
+              <Link to='/' className={s.navlink}><img className={s.iconHeader} src={Home} alt='home' /></Link>
+            </nav>
+            <div className={s.contactWrapper}>
+              <a href='mailto:fotoromario@gmail.com'><img src={Mail} alt='email' /></a>
+              <a href='tel:+380674825841'><img src={Tel} alt='phone' /></a>
+              <a href='https://telegram.me/romario360'><img src={Telegram} alt='telegram' /></a>
+              <a href={Resume} download><img src={Download} alt='download'/></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main className={s.mainPage}>
+        <div className={s.container}>
+          <div className={s.heroContent}>
+            <h1 className={s.heading1}>Hi there. I am Roman Merkulov</h1>
+            <p>Front-end developer</p>
+            <img src={HeroImage} alt='avatar' />
+            <Link to='/reason' className={s.navContent}>LET'S GO</Link>
+          </div>
+        </div>
+      </main>
+    </>
+  );
+};

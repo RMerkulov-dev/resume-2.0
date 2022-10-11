@@ -1,0 +1,154 @@
+@media screen and (min-width: 340px){
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 340px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+/*/////////////////*/
+
+/*=================== HEADER =============*/
+
+.headerContainer{
+  display: flex;
+  align-items: center;
+  padding: 10px 0 ;
+}
+.navigation{
+  display: flex;
+  align-items: baseline;
+}
+.navlink{
+  margin-right: 5px;
+}
+.navBtn{
+  border: none;
+}
+
+.iconHeader{
+  width: 25px;
+  height: 25px;
+}
+.nameText{
+  font-size: 15px;
+ font-weight: bold;
+  margin-left: auto;
+}
+.contactsList{
+  display: flex;
+  align-items: baseline;
+  margin-left: auto;
+}
+.contactsList a{
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.contactWrapper{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.contactWrapper a{
+  width: 25px;
+  height: 25px;
+}
+/*=================== HERO =============*/
+
+
+.heroContent{
+  margin-top: 30px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.heroContent img{
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+.heroContent p{
+  font-size: 20px;
+}
+.heading1{
+  font-size: 30px;
+}
+.navContent{
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 25px;
+  color: black;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  z-index: 10;
+  cursor: pointer;
+  animation: nav 2s ease-in-out 0s infinite normal forwards;
+}
+.navContent:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+.navContent:hover:before{
+  transform: translateX(0);
+  transition: 0.5s;
+}
+.navContent:hover{
+  color: white;
+  transition: 0.3s;
+
+}
+/*=================== adaptive =============*/
+
+
+
+
+/*animation*/
+
+@keyframes nav {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
