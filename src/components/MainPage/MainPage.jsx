@@ -30,6 +30,7 @@ export const MainPage = () => {
         </div>
       </header>
       <main className={s.mainPage}>
+      <section>
         <div className={s.container}>
           <div className={s.heroContent}>
             <h1 className={s.heading1}>Hi there. I am Roman Merkulov</h1>
@@ -38,6 +39,7 @@ export const MainPage = () => {
             <Link to='/reason' className={s.navContent}>LET'S GO</Link>
           </div>
         </div>
+      </section>
       </main>
     </>
   );
