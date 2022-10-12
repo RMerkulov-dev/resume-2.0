@@ -30,7 +30,7 @@ const elemRight = {
 
   },
   visible: custom => ({
-    x: 0,
+    x: 40,
     opacity: 1,
     transition: { delay: custom * 0.2,duration:0.8, },
   }),
@@ -43,7 +43,7 @@ const elemLeft = {
 
   },
   visible: custom => ({
-    x: 0,
+    x: -40,
     opacity: 1,
     transition: { delay: custom * 0.2,duration:0.8 , },
   }),
