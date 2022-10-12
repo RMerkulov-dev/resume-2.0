@@ -10,18 +10,10 @@ import Resume from '../../cv/cv_roman merkulov.pdf'
 import Linkedin from '../../images/header/linkedin.png'
 import { Link } from 'react-router-dom';
 import s from './MainPage.module.css';
-import { motion } from 'framer-motion';
 
 
-const elemOpacity = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: custom => ({
-    opacity: 1,
-    transition: { delay: custom * 0.4,duration:1 , },
-  }),
-};
+
+
 
 
 export const MainPage = () => {
@@ -30,10 +22,7 @@ export const MainPage = () => {
     <>
       <header className={s.header} >
         <div className={s.container}>
-          <motion.div className={s.headerContainer} initial='hidden'
-               whileInView='visible'
-               viewport={{ amount: 0.2,once: true }}
-               variants={elemOpacity}>
+          <div className={s.headerContainer} >
             <nav className={s.navigation}>
               <button className={s.navBtn} type='button'><img className={s.iconHeader} src={Menu} alt='menu' /></button>
               <Link to='/' className={s.navlink}><img className={s.iconHeader} src={Home} alt='home' /></Link>
@@ -46,14 +35,11 @@ export const MainPage = () => {
               <a href='https://github.com/RoRomario360' target="_blank"  rel="noopener noreferrer"><img src={Git} alt='github' /></a>
               <a href={Resume} download><img src={Download} alt='download'/></a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </header>
       <main className={s.mainPage}>
-      <motion.section initial='hidden'
-                      whileInView='visible'
-                      viewport={{ amount: 0.2,once: true }}
-                      variants={elemOpacity}>
+      <section >
         <div className={s.container}>
           <div className={s.heroContent}>
             <h1 className={s.heading1}>Hi there. I am Roman Merkulov</h1>
@@ -62,7 +48,7 @@ export const MainPage = () => {
             <Link to='/reason' className={s.navContent}>LET'S GO</Link>
           </div>
         </div>
-      </motion.section>
+      </section>
       </main>
     </>
   );
