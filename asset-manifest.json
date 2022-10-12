@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a3491522.css",
-    "main.js": "/static/js/main.86b49052.js",
+    "main.css": "/static/css/main.826ed678.css",
+    "main.js": "/static/js/main.1bf82f77.js",
     "static/media/cv_roman merkulov.pdf": "/static/media/cv_roman merkulov.551e91316bc3b3871958.pdf",
     "static/media/developer.png": "/static/media/developer.d1833059726d4eab0cb2.png",
     "static/media/music-app.jpg": "/static/media/music-app.dedd20427f301a42772d.jpg",
@@ -19,6 +19,7 @@
     "static/media/experience.png": "/static/media/experience.dd6c7252b5cbaa0bc307.png",
     "static/media/question.png": "/static/media/question.0764368f5f2b0c7c7a9b.png",
     "static/media/telegram.png": "/static/media/telegram.1b722a57c2ce8ff2980a.png",
+    "static/media/linkedin.png": "/static/media/linkedin.41a23f98c77f41c13b8e.png",
     "static/media/about.png": "/static/media/about.2c0e4093731d37faac4d.png",
     "static/media/sass.png": "/static/media/sass.da0d9637b178dbf70dc6.png",
     "static/media/portfolio.png": "/static/media/portfolio.d2bf983678522acefe79.png",
@@ -31,11 +32,11 @@
     "static/media/ship.png": "/static/media/ship.7a76104617c1484f0cf8.png",
     "static/media/axios.png": "/static/media/axios.a5c39f906da099ffbb58.png",
     "index.html": "/index.html",
-    "main.a3491522.css.map": "/static/css/main.a3491522.css.map",
-    "main.86b49052.js.map": "/static/js/main.86b49052.js.map"
+    "main.826ed678.css.map": "/static/css/main.826ed678.css.map",
+    "main.1bf82f77.js.map": "/static/js/main.1bf82f77.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3491522.css",
-    "static/js/main.86b49052.js"
+    "static/css/main.826ed678.css",
+    "static/js/main.1bf82f77.js"
   ]
 }
