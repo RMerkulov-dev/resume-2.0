@@ -15,7 +15,18 @@ import Linkedin from '../../images/header/linkedin.png';
 import { motion } from 'framer-motion';
 
 
+const elemRight = {
+  hidden: {
+    y: 100,
+    opacity: 0,
 
+  },
+  visible: custom => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2,duration:0.8, },
+  }),
+};
 
 
 
@@ -30,16 +41,7 @@ const elemOpacityShort = {
   }),
 };
 
-const elemOpacityLong = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: custom => ({
 
-    opacity: 1,
-    transition: { delay: custom * 0.4,duration:2 , },
-  }),
-};
 
 export const Experience=()=>{
   return (
@@ -79,7 +81,7 @@ export const Experience=()=>{
             <motion.div className={s.experienceBox} initial='hidden'
                         whileInView='visible'
                         viewport={{ amount: 0.2,once: true }}
-                        variants={elemOpacityLong}>
+                        variants={elemRight}>
               <img className={s.aboutImg} src={Altertech} alt='portfolio' />
               <p className={s.aboutText}>From 07.08.2022 <br/>
                 Trainee in Altertech</p>

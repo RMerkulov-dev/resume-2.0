@@ -19,29 +19,18 @@ import { motion } from 'framer-motion';
 
 const elemRight = {
   hidden: {
-    x: 100,
+    y: 100,
     opacity: 0,
 
   },
   visible: custom => ({
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: { delay: custom * 0.2,duration:0.8, },
   }),
 };
 
-const elemLeft = {
-  hidden: {
-    x: -100,
-    opacity: 0,
 
-  },
-  visible: custom => ({
-    x: 0,
-    opacity: 1,
-    transition: { delay: custom * 0.2,duration:0.8 , },
-  }),
-};
 
 const elemOpacityShort = {
   hidden: {
@@ -95,7 +84,7 @@ export const About=()=>{
           <motion.div className={s.aboutContent} initial='hidden'
                       whileInView='visible'
                       viewport={{ amount: 0.2,once: true }}
-                      variants={elemLeft}>
+                      variants={elemRight}>
             <img className={s.aboutImg} src={Education} alt='portfolio' />
             <p className={s.aboutText}>In 2003  began studying at Odessa Polytechnical University and graduated in 2008. Received a diploma from a specialist</p>
           </motion.div>
@@ -103,7 +92,7 @@ export const About=()=>{
           <motion.div className={s.aboutContent} initial='hidden'
                       whileInView='visible'
                       viewport={{ amount: 0.2,once: true }}
-                      variants={elemLeft}>
+                      variants={elemRight}>
             <img className={s.aboutImg} src={Ship} alt='portfolio' />
             <p className={s.aboutText}>From 2013 to 2021, worked as a senior coordinator in maritime transport. Managed people, improved processes, and solved complex problems</p>
           </motion.div>
@@ -119,7 +108,7 @@ export const About=()=>{
           <motion.div className={s.aboutContent} initial='hidden'
                       whileInView='visible'
                       viewport={{ amount: 0.2,once: true }}
-                      variants={elemLeft}>
+                      variants={elemRight}>
             <img className={s.aboutImg} src={Goit} alt='portfolio' />
             <p className={s.aboutText}>At 2022, finished Bootcamp online courses at Go It school </p>
           </motion.div>

@@ -32,18 +32,7 @@ const elemRight = {
   }),
 };
 
-const elemLeft = {
-  hidden: {
-    y: -100,
-    opacity: 0,
 
-  },
-  visible: custom => ({
-    y: 0,
-    opacity: 1,
-    transition: { delay: custom * 0.2,duration:0.8 , },
-  }),
-};
 
 
 
@@ -100,7 +89,7 @@ export const Portfolio = () => {
               <motion.div className={s.projectBox} initial='hidden'
                           whileInView='visible'
                           viewport={{ amount: 0.2,once: true }}
-                          variants={elemLeft} current={1}>
+                          variants={elemRight} current={1}>
                 <h3 className={s.projTitle}>KAPUSTA</h3>
                 <p>Team project</p>
                 <a className={s.projectPoster} href='https://kapusta-project-app.netlify.app/main' target="_blank" rel="noreferrer">
@@ -130,7 +119,7 @@ export const Portfolio = () => {
               <motion.div className={s.projectBox} initial='hidden'
                           whileInView='visible'
                           viewport={{ amount: 0.2,once: true }}
-                          variants={elemLeft} current={3}>
+                          variants={elemRight} current={3}>
                 <h3 className={s.projTitle}>FILMOTEKA</h3>
                 <p>Team project</p>
                 <a className={s.projectPoster} href='https://redokleeroy.github.io/let_JS_project/' target="_blank" rel="noreferrer">
