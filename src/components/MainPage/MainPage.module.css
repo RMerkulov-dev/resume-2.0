@@ -36,7 +36,9 @@
   margin-right: 5px;
 }
 .navBtn{
+  margin-right: 10px;
   border: none;
+  background-color: transparent;
 }
 
 .iconHeader{
@@ -72,6 +74,20 @@
   width: 25px;
   height: 25px;
 }
+
+@media (min-width: 1245px) {
+  .iconHeader{
+    width: 30px;
+    height: 30px;
+  }
+  .contactWrapper a{
+    width: 30px;
+    height: 30px;
+  }
+
+}
+
+
 /*=================== HERO =============*/
 
 
@@ -80,14 +96,11 @@
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
-
 }
 .heroContent img{
   width: 250px;
   margin-left: auto;
   margin-right: auto;
-
-
 }
 .heroContent p{
   font-size: 20px;
@@ -130,9 +143,33 @@
 .navContent:hover{
   color: white;
   transition: 0.3s;
-
 }
-/*=================== adaptive =============*/
+
+@media (min-width: 1245px) {
+  .heading1{
+    font-size: 40px;
+  }
+  .heroContent{
+    margin-top: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heroContent img{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heroContent p{
+     font-size: 30px;
+   }
+  .navContent{
+    width: 200px;
+    height: 40px;
+  }
+}
+
+
 
 
 
