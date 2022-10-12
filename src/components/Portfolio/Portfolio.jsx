@@ -21,12 +21,12 @@ import { motion } from 'framer-motion';
 
 const elemRight = {
   hidden: {
-    x: 300,
+    x: 100,
     opacity: 0,
 
   },
   visible: custom => ({
-    x: 40,
+    x: 0,
     opacity: 1,
     transition: { delay: custom * 0.2,duration:0.8, },
   }),
@@ -34,12 +34,12 @@ const elemRight = {
 
 const elemLeft = {
   hidden: {
-    x: -300,
+    x: -100,
     opacity: 0,
 
   },
   visible: custom => ({
-    x: -40,
+    x: 0,
     opacity: 1,
     transition: { delay: custom * 0.2,duration:0.8 , },
   }),

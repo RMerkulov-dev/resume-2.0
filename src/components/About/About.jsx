@@ -19,7 +19,7 @@ import { motion } from 'framer-motion';
 
 const elemRight = {
   hidden: {
-    x: 300,
+    x: 100,
     opacity: 0,
 
   },
@@ -32,7 +32,7 @@ const elemRight = {
 
 const elemLeft = {
   hidden: {
-    x: -300,
+    x: -100,
     opacity: 0,
 
   },
