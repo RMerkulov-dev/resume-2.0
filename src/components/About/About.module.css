@@ -75,6 +75,7 @@
 
 /*=================== MAIN =============*/
 .aboutWrapper{
+  margin-top: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,6 +94,7 @@
   width: 25px;
   animation: scroll 3s ease-in 0s infinite normal forwards;
 }
+
 .aboutContent{
   margin-top: 100px;
   display: flex;
@@ -100,6 +102,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .aboutImg{
   width: 100px;
 }

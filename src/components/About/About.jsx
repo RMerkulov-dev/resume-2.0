@@ -14,6 +14,7 @@ import Education from '../../images/hero/education.png'
 import Ship from '../../images/hero/ship.png'
 import Photo from '../../images/hero/360-image.png'
 import Goit from '../../images/hero/goit.png'
+import Linkedin from '../../images/header/linkedin.png';
 
 export const About=()=>{
 
@@ -30,6 +31,7 @@ export const About=()=>{
               <a href='mailto:fotoromario@gmail.com'><img src={Mail} alt='email' /></a>
               <a href='tel:+380674825841'><img src={Tel} alt='phone' /></a>
               <a href='https://telegram.me/romario360' target='_blank'  rel="noopener noreferrer"><img src={Telegram} alt='telegram' /></a>
+              <a href='https://www.linkedin.com/in/roman-merkulov-857041241/' target="_blank"  rel="noopener noreferrer"><img src={Linkedin} alt='github' /></a>
               <a href='https://github.com/RoRomario360' target='_blank'  rel="noopener noreferrer"><img src={Git} alt='github' /></a>
               <a href={Resume} download><img src={Download} alt='download' /></a>
             </div>
@@ -44,6 +46,7 @@ export const About=()=>{
   <h1 className={s.heading1}>Let's look at my story</h1>
   <img className={s.iconMouse} src={Mouse} alt='icon' />
 </div>
+
           <div className={s.aboutContent}>
             <img className={s.aboutImg} src={Education} alt='portfolio' />
             <p className={s.aboutText}>In 2003  began studying at Odessa Polytechnical University and graduated in 2008. Received a diploma from a specialist</p>
@@ -64,7 +67,8 @@ export const About=()=>{
             <p className={s.aboutText}>At 2022, finished Bootcamp online courses at Go It school </p>
           </div>
           <Link to='/experience' className={s.navContent}>COMMERCIAL EXPERIENCE</Link>
-        </div>
+          </div>
+
         </section>
       </main>
     </>
