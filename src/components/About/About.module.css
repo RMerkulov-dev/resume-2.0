@@ -74,4 +74,86 @@
 }
 
 /*=================== MAIN =============*/
+.aboutWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.portfolioImg{
+  width: 250px;
+}
+.heading1{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.iconMouse{
+  margin-top: 20px;
+  width: 25px;
+  animation: scroll 3s ease-in 0s infinite normal forwards;
+}
+.aboutContent{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.aboutImg{
+  width: 100px;
+}
+.aboutText{
+  text-align: center;
+  font-size: 15px;
+}
 
+
+
+/*============== animation =================*/
+
+@keyframes scroll {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(15px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(10px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
