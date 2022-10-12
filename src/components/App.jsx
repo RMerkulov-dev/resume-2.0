@@ -4,21 +4,20 @@ import { Routes, Route } from 'react-router-dom';
 import { Portfolio } from './Portfolio/Portfolio';
 import { About } from './About/About';
 import ScrollToTop from './ScrollToTop/ScrollToTop';
+import { Experience } from './Experience/Experience';
 
 export const App = () => {
   return (
 <>
-
     <ScrollToTop>
   <Routes>
     <Route path="/" element={<MainPage/>} />
     <Route path="/reason" element={<Reason/>} />
     <Route path="/portfolio" element={<Portfolio/>} />
     <Route path="/about" element={<About/>} />
+    <Route path="/experience" element={<Experience/>} />
   </Routes>
     </ScrollToTop>
-
 </>
   )
-
 };

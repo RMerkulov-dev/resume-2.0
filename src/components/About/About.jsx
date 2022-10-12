@@ -13,6 +13,7 @@ import Mouse from '../../images/hero/mouse.png';
 import Education from '../../images/hero/education.png'
 import Ship from '../../images/hero/ship.png'
 import Photo from '../../images/hero/360-image.png'
+import Goit from '../../images/hero/goit.png'
 
 export const About=()=>{
 
@@ -58,6 +59,11 @@ export const About=()=>{
             <p className={s.aboutText}>From 2021 to 2013, worked as a freelance photographer and creator of 360 Virtual tours. Mastered and studied one of the most complex editing programs. I also took photos and edited videos. Taught people online.</p>
           </div>
 
+          <div className={s.aboutContent}>
+            <img className={s.aboutImg} src={Goit} alt='portfolio' />
+            <p className={s.aboutText}>At 2022, finished Bootcamp online courses at Go It school </p>
+          </div>
+          <Link to='/experience' className={s.navContent}>COMMERCIAL EXPERIENCE</Link>
         </div>
         </section>
       </main>

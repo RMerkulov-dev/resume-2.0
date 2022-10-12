@@ -73,14 +73,15 @@
   height: 25px;
 }
 
-/*=================== MAIN =============*/
-.aboutWrapper{
+/*====================== MAIN ================*/
+
+.experienceWrap{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.portfolioImg{
+.experienceImg{
   width: 250px;
 }
 .heading1{
@@ -93,7 +94,7 @@
   width: 25px;
   animation: scroll 3s ease-in 0s infinite normal forwards;
 }
-.aboutContent{
+.experienceBox{
   margin-top: 100px;
   display: flex;
   align-items: center;
@@ -108,44 +109,6 @@
   text-align: center;
   font-size: 15px;
 }
-
-.navContent{
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  height: 25px;
-  color: black;
-  border: 2px solid black;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  font-size: 15px;
-  font-weight: bold;
-  z-index: 10;
-  cursor: pointer;
-  animation: nav 2s ease-in-out 0s infinite normal forwards;
-}
-.navContent:before{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  transform: translateX(-100%);
-  z-index: -1;
-}
-.navContent:hover:before{
-  transform: translateX(0);
-  transition: 0.5s;
-}
-.navContent:hover{
-  color: white;
-  transition: 0.3s;
-}
-
 /*============== animation =================*/
 
 @keyframes scroll {
