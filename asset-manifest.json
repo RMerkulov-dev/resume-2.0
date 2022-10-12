@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/resume-2.0/static/css/main.43909230.css",
-    "main.js": "/resume-2.0/static/js/main.71520569.js",
+    "main.css": "/resume-2.0/static/css/main.0f97f437.css",
+    "main.js": "/resume-2.0/static/js/main.2957fa8a.js",
     "static/media/cv_roman merkulov.pdf": "/resume-2.0/static/media/cv_roman merkulov.551e91316bc3b3871958.pdf",
     "static/media/developer.png": "/resume-2.0/static/media/developer.d1833059726d4eab0cb2.png",
+    "static/media/music-app.jpg": "/resume-2.0/static/media/music-app.dedd20427f301a42772d.jpg",
+    "static/media/hell.jpg": "/resume-2.0/static/media/hell.6296b3623f861fd548db.jpg",
+    "static/media/filmoteka.jpg": "/resume-2.0/static/media/filmoteka.de79caef585ff1dcd657.jpg",
+    "static/media/kapusta.jpg": "/resume-2.0/static/media/kapusta.dc9a2f517294a069e7f6.jpg",
     "static/media/tailwind.png": "/resume-2.0/static/media/tailwind.417a8ec5dee20fb995d8.png",
     "static/media/redux.png": "/resume-2.0/static/media/redux.9c209e13b2d72ca140ae.png",
     "static/media/bts.png": "/resume-2.0/static/media/bts.4d93bf47826f44274a13.png",
@@ -12,6 +16,7 @@
     "static/media/question.png": "/resume-2.0/static/media/question.0764368f5f2b0c7c7a9b.png",
     "static/media/telegram.png": "/resume-2.0/static/media/telegram.1b722a57c2ce8ff2980a.png",
     "static/media/sass.png": "/resume-2.0/static/media/sass.da0d9637b178dbf70dc6.png",
+    "static/media/portfolio.png": "/resume-2.0/static/media/portfolio.d2bf983678522acefe79.png",
     "static/media/mail.png": "/resume-2.0/static/media/mail.2c378c9ee25927123f7d.png",
     "static/media/js.png": "/resume-2.0/static/media/js.b80c196fd0920113e116.png",
     "static/media/css.png": "/resume-2.0/static/media/css.c6f9bece5e61aa4418f6.png",
@@ -20,11 +25,11 @@
     "static/media/mouse.png": "/resume-2.0/static/media/mouse.88759d80b83de8260e2b.png",
     "static/media/axios.png": "/resume-2.0/static/media/axios.a5c39f906da099ffbb58.png",
     "index.html": "/resume-2.0/index.html",
-    "main.43909230.css.map": "/resume-2.0/static/css/main.43909230.css.map",
-    "main.71520569.js.map": "/resume-2.0/static/js/main.71520569.js.map"
+    "main.0f97f437.css.map": "/resume-2.0/static/css/main.0f97f437.css.map",
+    "main.2957fa8a.js.map": "/resume-2.0/static/js/main.2957fa8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.43909230.css",
-    "static/js/main.71520569.js"
+    "static/css/main.0f97f437.css",
+    "static/js/main.2957fa8a.js"
   ]
 }
