@@ -12,13 +12,44 @@ import Expert from '../../images/hero/experience.png'
 import Mouse from '../../images/hero/mouse.png';
 import Altertech from '../../images/hero/altertech.png'
 import Linkedin from '../../images/header/linkedin.png';
+import { motion } from 'framer-motion';
+
+
+
+
+
+
+const elemOpacityShort = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: custom => ({
+
+    opacity: 1,
+    transition: { delay: custom * 0.4,duration:1 , },
+  }),
+};
+
+const elemOpacityLong = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: custom => ({
+
+    opacity: 1,
+    transition: { delay: custom * 0.4,duration:2 , },
+  }),
+};
 
 export const Experience=()=>{
   return (
     <>
       <header className={s.header}>
         <div className={s.container}>
-          <div className={s.headerContainer}>
+          <motion.div className={s.headerContainer} initial='hidden'
+                      whileInView='visible'
+                      viewport={{ amount: 0.2,once: true }}
+                      variants={elemOpacityShort}>
             <nav className={s.navigation}>
               <button className={s.navBtn} type='button'><img className={s.iconHeader} src={Menu} alt='menu' /></button>
               <Link to='/' className={s.navlink}><img className={s.iconHeader} src={Home} alt='home' /></Link>
@@ -31,22 +62,28 @@ export const Experience=()=>{
               <a href='https://github.com/RoRomario360' target='_blank'  rel="noopener noreferrer"><img src={Git} alt='github' /></a>
               <a href={Resume} download><img src={Download} alt='download' /></a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </header>
       <main>
         <section>
           <div className={s.container}>
-            <div className={s.experienceWrap}>
+            <motion.div className={s.experienceWrap} initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.2,once: true }}
+                        variants={elemOpacityShort}>
               <img className={s.experienceImg} src={Expert} alt='portfolio' />
               <h1 className={s.heading1}>My commercial experience</h1>
               <img className={s.iconMouse} src={Mouse} alt='icon' />
-            </div>
-            <div className={s.experienceBox}>
+            </motion.div>
+            <motion.div className={s.experienceBox} initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.2,once: true }}
+                        variants={elemOpacityLong}>
               <img className={s.aboutImg} src={Altertech} alt='portfolio' />
               <p className={s.aboutText}>From 07.08.2022 <br/>
                 Trainee in Altertech</p>
-            </div>
+            </motion.div>
           </div>
         </section>
       </main>

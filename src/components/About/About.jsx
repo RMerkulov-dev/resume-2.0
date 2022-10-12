@@ -15,6 +15,45 @@ import Ship from '../../images/hero/ship.png'
 import Photo from '../../images/hero/360-image.png'
 import Goit from '../../images/hero/goit.png'
 import Linkedin from '../../images/header/linkedin.png';
+import { motion } from 'framer-motion';
+
+const elemRight = {
+  hidden: {
+    x: 300,
+    opacity: 0,
+
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2,duration:0.8, },
+  }),
+};
+
+const elemLeft = {
+  hidden: {
+    x: -300,
+    opacity: 0,
+
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2,duration:0.8 , },
+  }),
+};
+
+const elemOpacityShort = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: custom => ({
+
+    opacity: 1,
+    transition: { delay: custom * 0.4,duration:1 , },
+  }),
+};
+
 
 export const About=()=>{
 
@@ -22,7 +61,10 @@ export const About=()=>{
     <>
       <header className={s.header}>
         <div className={s.container}>
-          <div className={s.headerContainer}>
+          <motion.div className={s.headerContainer} initial='hidden'
+                      whileInView='visible'
+                      viewport={{ amount: 0.2,once: true }}
+                      variants={elemOpacityShort}>
             <nav className={s.navigation}>
               <button className={s.navBtn} type='button'><img className={s.iconHeader} src={Menu} alt='menu' /></button>
               <Link to='/' className={s.navlink}><img className={s.iconHeader} src={Home} alt='home' /></Link>
@@ -35,37 +77,52 @@ export const About=()=>{
               <a href='https://github.com/RoRomario360' target='_blank'  rel="noopener noreferrer"><img src={Git} alt='github' /></a>
               <a href={Resume} download><img src={Download} alt='download' /></a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </header>
       <main>
         <section>
         <div className={s.container}>
-<div className={s.aboutWrapper}>
+<motion.div className={s.aboutWrapper} initial='hidden'
+            whileInView='visible'
+            viewport={{ amount: 0.2,once: true }}
+            variants={elemOpacityShort}>
   <img className={s.portfolioImg} src={Card} alt='portfolio' />
   <h1 className={s.heading1}>Let's look at my story</h1>
   <img className={s.iconMouse} src={Mouse} alt='icon' />
-</div>
+</motion.div>
 
-          <div className={s.aboutContent}>
+          <motion.div className={s.aboutContent} initial='hidden'
+                      whileInView='visible'
+                      viewport={{ amount: 0.2,once: true }}
+                      variants={elemLeft}>
             <img className={s.aboutImg} src={Education} alt='portfolio' />
             <p className={s.aboutText}>In 2003  began studying at Odessa Polytechnical University and graduated in 2008. Received a diploma from a specialist</p>
-          </div>
+          </motion.div>
 
-          <div className={s.aboutContent}>
+          <motion.div className={s.aboutContent} initial='hidden'
+                      whileInView='visible'
+                      viewport={{ amount: 0.2,once: true }}
+                      variants={elemLeft}>
             <img className={s.aboutImg} src={Ship} alt='portfolio' />
             <p className={s.aboutText}>From 2013 to 2021, worked as a senior coordinator in maritime transport. Managed people, improved processes, and solved complex problems</p>
-          </div>
+          </motion.div>
 
-          <div className={s.aboutContent}>
+          <motion.div className={s.aboutContent} initial='hidden'
+                      whileInView='visible'
+                      viewport={{ amount: 0.2,once: true }}
+                      variants={elemRight}>
             <img className={s.aboutImg} src={Photo} alt='portfolio' />
             <p className={s.aboutText}>From 2021 to 2013, worked as a freelance photographer and creator of 360 Virtual tours. Mastered and studied one of the most complex editing programs. I also took photos and edited videos. Taught people online.</p>
-          </div>
+          </motion.div>
 
-          <div className={s.aboutContent}>
+          <motion.div className={s.aboutContent} initial='hidden'
+                      whileInView='visible'
+                      viewport={{ amount: 0.2,once: true }}
+                      variants={elemLeft}>
             <img className={s.aboutImg} src={Goit} alt='portfolio' />
             <p className={s.aboutText}>At 2022, finished Bootcamp online courses at Go It school </p>
-          </div>
+          </motion.div>
           <Link to='/experience' className={s.navContent}>COMMERCIAL EXPERIENCE</Link>
           </div>
 
