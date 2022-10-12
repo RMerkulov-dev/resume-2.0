@@ -96,8 +96,8 @@ export const Portfolio = () => {
                   <li><a href='https://github.com/YehorBoichenko/crazy-bears' target="_blank" rel="noreferrer"><img src={GitHub} alt='link' /></a></li>
                 </ul>
               </div>
-              <Link to='/about' className={s.navContent}>ABOUT ME</Link>
             </div>
+            <Link to='/about' className={s.navContent}>ABOUT ME</Link>
           </div>
         </section>
       </main>

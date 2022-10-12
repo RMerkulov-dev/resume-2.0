@@ -73,6 +73,17 @@
   height: 25px;
 }
 
+@media (min-width: 1245px) {
+  .iconHeader{
+    width: 30px;
+    height: 30px;
+  }
+  .contactWrapper a{
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /*=================== MAIN =============*/
 .aboutWrapper{
   margin-top: 150px;
@@ -148,6 +159,36 @@
   color: white;
   transition: 0.3s;
 }
+
+@media (min-width: 1245px) {
+  .aboutWrapper{
+    margin-top: 0;
+  }
+  .iconMouse {
+    margin-top: 40px;
+    width: 40px;
+  }
+  .heading1{
+    font-size: 40px;
+  }
+  .navContent{
+    width: 300px;
+    height: 40px;
+  }
+  .portfolioImg{
+    width: 350px;
+  }
+  .aboutImg{
+    width: 200px;
+  }
+  .aboutText{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    width: 700px;
+  }
+}
+
 
 /*============== animation =================*/
 

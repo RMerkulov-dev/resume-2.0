@@ -77,6 +77,18 @@
   font-size: 30px;
   font-weight: bold;
 }
+@media (min-width: 1245px) {
+  .iconHeader{
+    width: 30px;
+    height: 30px;
+  }
+  .contactWrapper a{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/*========= main =============*/
 .portfolioImg{
   width: 250px;
   margin-bottom: 20px;
@@ -93,11 +105,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   gap: 40px;
 }
 .projectBox{
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +119,6 @@
   height: 160px;
   border: 2px solid black;
   transition: 0.3s;
-
 }
 .projectPoster:hover{
 transform: scale(0.9);
@@ -198,6 +207,53 @@ transform: scale(0.9);
   color: white;
   transition: 0.3s;
 }
+
+@media (min-width: 1245px) {
+  .portfolioWrapper{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+  }
+  .projTitle{
+    font-size: 30px;
+  }
+  .heading1{
+    font-size: 40px;
+  }
+  .projectBox p{
+    font-size: 20px;
+  }
+  .projectPoster{
+    margin-top: 10px;
+    width: 480px;
+    height: 260px;
+  }
+  .iconMouse {
+    margin-top: 40px;
+    width: 40px;
+  }
+  .linksList img{
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+  }
+  .navContent{
+    width: 200px;
+    height: 40px;
+  }
+  .portfolioImg{
+    width: 350px;
+    margin-bottom: 20px;
+  }
+  .portfolioMain{
+    margin-top: 0;
+
+  }
+}
+
 
 /*==================== animation ==================*/
 

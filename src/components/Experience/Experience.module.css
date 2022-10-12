@@ -73,6 +73,17 @@
   height: 25px;
 }
 
+@media (min-width: 1245px) {
+  .iconHeader{
+    width: 30px;
+    height: 30px;
+  }
+  .contactWrapper a{
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /*====================== MAIN ================*/
 
 .experienceWrap{
@@ -110,6 +121,35 @@
   text-align: center;
   font-size: 15px;
 }
+
+@media (min-width: 1245px) {
+  .experienceWrap{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .iconMouse {
+    margin-top: 40px;
+    width: 40px;
+  }
+  .experienceImg{
+    width: 350px;
+  }
+  .heading1{
+    font-size: 40px;
+  }
+  .aboutImg{
+    width: 200px;
+  }
+  .aboutText{
+
+    font-size: 25px;
+  }
+}
+
+
 /*============== animation =================*/
 
 @keyframes scroll {
