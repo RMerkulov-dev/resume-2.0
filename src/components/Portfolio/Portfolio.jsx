@@ -76,14 +76,11 @@ export const Portfolio = () => {
       <main>
         <section>
           <div className={s.container}>
-            <motion.div className={s.portfolioMain} initial='hidden'
-                        whileInView='visible'
-                        viewport={{ amount: 0.2,once: true }}
-                        variants={elemOpacityShort}>
+            <div className={s.portfolioMain} >
               <img className={s.portfolioImg} src={Projects} alt='portfolio' />
               <h1 className={s.heading1}>Let's see my projects</h1>
               <img className={s.iconMouse} src={Mouse} alt='icon' />
-            </motion.div>
+            </div>
             <div className={s.portfolioWrapper}>
 
               <motion.div className={s.projectBox} initial='hidden'
