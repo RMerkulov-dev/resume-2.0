@@ -19,6 +19,7 @@ import Bts from '../../images/skills/bts.png';
 import Axios from '../../images/skills/axios.png';
 import Material from '../../images/skills/material.png';
 import Tailwind from '../../images/skills/tailwind.png';
+import Git from '../../images/header/github-header.png';
 
 
 export const Reason = () => {
@@ -34,7 +35,8 @@ export const Reason = () => {
             <div className={s.contactWrapper}>
               <a href='mailto:fotoromario@gmail.com'><img src={Mail} alt='email' /></a>
               <a href='tel:+380674825841'><img src={Tel} alt='phone' /></a>
-              <a href='https://telegram.me/romario360'><img src={Telegram} alt='telegram' /></a>
+              <a href='https://telegram.me/romario360' target="_blank"  rel="noopener noreferrer"><img src={Telegram} alt='telegram' /></a>
+              <a href='https://github.com/RoRomario360' target="_blank"  rel="noopener noreferrer"><img src={Git} alt='github' /></a>
               <a href={Resume} download><img src={Download} alt='download' /></a>
             </div>
           </div>
@@ -45,7 +47,7 @@ export const Reason = () => {
           <div className={s.container}>
             <div className={s.reasonMain}>
               <img className={s.iconQuestion} src={Question} alt='question' />
-              <h2 className={s.heading1}>Why me</h2>
+              <h1 className={s.heading1}>Why me</h1>
               <img className={s.iconMouse} src={Mouse} alt='icon' />
             </div>
             <div className={s.reasonStat}>
@@ -67,7 +69,7 @@ export const Reason = () => {
                   <img className={s.skillImg} src={Tailwind} alt='logo' />
                   <img className={s.skillImg} src={Bts} alt='logo' />
                 </div>
-                <Link to='/reason' className={s.navContent}>PORTFOLIO</Link>
+                <Link to='/portfolio' className={s.navContent}>PORTFOLIO</Link>
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ import Tel from '../../images/header/phone.png'
 import Mail from '../../images/header/mail.png'
 import Telegram from '../../images/header/telegram.png'
 import Download from '../../images/header/cv.png'
+import Git from '../../images/header/github-header.png'
 import Resume from '../../cv/cv_roman merkulov.pdf'
 import { Link } from 'react-router-dom';
 import s from './MainPage.module.css';
@@ -23,7 +24,8 @@ export const MainPage = () => {
             <div className={s.contactWrapper}>
               <a href='mailto:fotoromario@gmail.com'><img src={Mail} alt='email' /></a>
               <a href='tel:+380674825841'><img src={Tel} alt='phone' /></a>
-              <a href='https://telegram.me/romario360'><img src={Telegram} alt='telegram' /></a>
+              <a href='https://telegram.me/romario360' target="_blank"  rel="noopener noreferrer"><img src={Telegram} alt='telegram' /></a>
+              <a href='https://github.com/RoRomario360' target="_blank"  rel="noopener noreferrer"><img src={Git} alt='github' /></a>
               <a href={Resume} download><img src={Download} alt='download'/></a>
             </div>
           </div>

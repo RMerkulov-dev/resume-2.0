@@ -1,0 +1,7 @@
+.slideKapusta{
+  width: 150px;
+  height: 100px;
+  background-image: url("../../images/portfolio/kapusta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
