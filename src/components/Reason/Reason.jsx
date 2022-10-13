@@ -21,18 +21,49 @@ import Material from '../../images/skills/material.png';
 import Tailwind from '../../images/skills/tailwind.png';
 import Git from '../../images/header/github-header.png';
 import Linkedin from '../../images/header/linkedin.png';
+import { motion } from 'framer-motion';
 
+const elemOpacity = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: custom => ({
+    opacity: 1,
+    transition: { delay: custom * 0.4,duration:0.8, },
+  }),
+};
+const elemY = {
+  hidden: {
+    y: 100,
+    opacity: 0,
 
+  },
+  visible: custom => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2,duration:0.8, },
+  }),
+};
+const elemOpacityLong = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: custom => ({
 
-
-
+    opacity: 1,
+    transition: { delay: custom * 0.4,duration:2 , },
+  }),
+};
 
 export const Reason = () => {
   return (
     <>
       <header className={s.header}>
         <div className={s.container}>
-          <div className={s.headerContainer} >
+          <motion.div className={s.headerContainer} initial='hidden'
+                      whileInView='visible'
+                      viewport={{ amount: 0.2,once: true }}
+                      variants={elemOpacity}>
             <nav className={s.navigation}>
               <button className={s.navBtn} type='button'><img className={s.iconHeader} src={Menu} alt='menu' /></button>
               <Link to='/' className={s.navlink}><img className={s.iconHeader} src={Home} alt='home' /></Link>
@@ -48,26 +79,42 @@ export const Reason = () => {
                                                                                                        alt='github' /></a>
               <a href={Resume} download><img src={Download} alt='download' /></a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </header>
       <main>
-        <section
-
-        >
+        <section>
           <div className={s.container}>
-            <div className={s.reasonMain} >
+            <motion.div className={s.reasonMain} initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.2,once: true }}
+                        variants={elemOpacity}>
               <img className={s.iconQuestion} src={Question} alt='question' />
               <h1 className={s.heading1}>Why me</h1>
               <img className={s.iconMouse} src={Mouse} alt='icon' />
-            </div>
+            </motion.div>
             <div className={s.reasonStat}>
-              <div className={s.motivated}>More motivated than 96.6%</div>
-              <div className={s.motivated}>More responsible than 94.4%</div>
-              <div className={s.motivated}>Love front-end more than 99.4%</div>
-              <div className={s.motivated} >Had a graphic background
-              </div>
-              <div className={s.hardSkillsWrap} >
+              <motion.div className={s.motivated} initial='hidden'
+                          whileInView='visible'
+                          viewport={{ amount: 0.2,once: true }}
+                          variants={elemY}>More motivated than 96.6%</motion.div>
+              <motion.div className={s.motivated} initial='hidden'
+                          whileInView='visible'
+                          viewport={{ amount: 0.2,once: true }}
+                          variants={elemY}>More responsible than 94.4%</motion.div>
+              <motion.div className={s.motivated} initial='hidden'
+                          whileInView='visible'
+                          viewport={{ amount: 0.2,once: true }}
+                          variants={elemY}>Love front-end more than 99.4%</motion.div>
+              <motion.div className={s.motivated} initial='hidden'
+                          whileInView='visible'
+                          viewport={{ amount: 0.2,once: true }}
+                          variants={elemY} >Had a graphic background
+              </motion.div>
+              <motion.div className={s.hardSkillsWrap} initial='hidden'
+                          whileInView='visible'
+                          viewport={{ amount: 0.2,once: true }}
+                          variants={elemOpacityLong}>
                 <h2 className={s.heading1}>My hard skills</h2>
                 <div className={s.skillsBox}>
                   <img className={s.skillImg} src={Html} alt='logo' />
@@ -82,7 +129,7 @@ export const Reason = () => {
                   <img className={s.skillImg} src={Bts} alt='logo' />
                 </div>
                 <Link to='/portfolio' className={s.navContent}>PORTFOLIO</Link>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>
