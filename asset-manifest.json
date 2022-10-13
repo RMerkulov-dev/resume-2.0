@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.51189d96.css",
-    "main.js": "/static/js/main.ba404e55.js",
+    "main.css": "/static/css/main.0c5fca60.css",
+    "main.js": "/static/js/main.29e895b3.js",
     "static/media/cv_roman merkulov.pdf": "/static/media/cv_roman merkulov.551e91316bc3b3871958.pdf",
     "static/media/developer.png": "/static/media/developer.d1833059726d4eab0cb2.png",
     "static/media/music-app.jpg": "/static/media/music-app.dedd20427f301a42772d.jpg",
@@ -32,11 +32,11 @@
     "static/media/ship.png": "/static/media/ship.7a76104617c1484f0cf8.png",
     "static/media/axios.png": "/static/media/axios.a5c39f906da099ffbb58.png",
     "index.html": "/index.html",
-    "main.51189d96.css.map": "/static/css/main.51189d96.css.map",
-    "main.ba404e55.js.map": "/static/js/main.ba404e55.js.map"
+    "main.0c5fca60.css.map": "/static/css/main.0c5fca60.css.map",
+    "main.29e895b3.js.map": "/static/js/main.29e895b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.51189d96.css",
-    "static/js/main.ba404e55.js"
+    "static/css/main.0c5fca60.css",
+    "static/js/main.29e895b3.js"
   ]
 }
