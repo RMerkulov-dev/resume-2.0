@@ -36,7 +36,9 @@
   margin-right: 5px;
 }
 .navBtn{
+  margin-right: 10px;
   border: none;
+  background-color: transparent;
 }
 
 .iconHeader{
