@@ -42,6 +42,12 @@
 .iconHeader{
   width: 25px;
   height: 25px;
+  transition: 0.3s;
+
+}
+.iconHeader:hover{
+  transform: translateY(-5px);
+  transition: 0.3s;
 }
 .nameText{
   font-size: 15px;
@@ -71,8 +77,13 @@
 .contactWrapper a{
   width: 25px;
   height: 25px;
-}
+  transition: 0.3s;
 
+}
+.contactWrapper a:hover{
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
 @media (min-width: 1245px) {
   .iconHeader{
     width: 30px;
@@ -107,7 +118,7 @@
 }
 
 .aboutContent{
-  margin-top: 100px;
+  margin-top: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,6 +174,9 @@
 @media (min-width: 1245px) {
   .aboutWrapper{
     margin-top: 0;
+  }
+  .aboutContent{
+    margin-top: 200px;
   }
   .iconMouse {
     margin-top: 40px;

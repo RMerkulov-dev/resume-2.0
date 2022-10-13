@@ -42,6 +42,12 @@
 .iconHeader{
   width: 25px;
   height: 25px;
+  transition: 0.3s;
+
+}
+.iconHeader:hover{
+  transform: translateY(-5px);
+  transition: 0.3s;
 }
 .nameText{
   font-size: 15px;
@@ -71,6 +77,12 @@
 .contactWrapper a{
   width: 25px;
   height: 25px;
+  transition: 0.3s;
+
+}
+.contactWrapper a:hover{
+  transform: translateY(-5px);
+  transition: 0.3s;
 }
 @media (min-width: 1245px) {
   .iconHeader{
@@ -108,7 +120,7 @@
   font-weight: bold;
 }
 .reasonStat{
-  margin-top: 100px;
+  margin-top: 200px;
 display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,6 +230,7 @@ display: flex;
   }
   .reasonStat{
     gap: 30px;
+    margin-top: 200px;
   }
   .skillImg{
     width: 100px;

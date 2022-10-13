@@ -24,18 +24,7 @@ const elemOpacity = {
     transition: { delay: custom * 0.4,duration:0.8, },
   }),
 };
-const elemY = {
-  hidden: {
-    y: 100,
-    opacity: 0,
 
-  },
-  visible: custom => ({
-    y: 0,
-    opacity: 1,
-    transition: { delay: custom * 0.2,duration:0.8, },
-  }),
-};
 
 export const Experience = () => {
   return (
@@ -70,7 +59,7 @@ export const Experience = () => {
             <motion.div className={s.experienceWrap} initial='hidden'
                         whileInView='visible'
                         viewport={{ amount: 0.2,once: true }}
-                        variants={elemY}>
+                        variants={elemOpacity}>
               <img className={s.experienceImg} src={Expert} alt='portfolio' />
               <h1 className={s.heading1}>My commercial experience</h1>
               <img className={s.iconMouse} src={Mouse} alt='icon' />
