@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6128c058.css",
-    "main.js": "/static/js/main.611c91b5.js",
+    "main.js": "/static/js/main.5e0d2d20.js",
     "static/media/cv_roman merkulov.pdf": "/static/media/cv_roman merkulov.551e91316bc3b3871958.pdf",
     "static/media/developer.png": "/static/media/developer.d1833059726d4eab0cb2.png",
     "static/media/music-app.jpg": "/static/media/music-app.dedd20427f301a42772d.jpg",
@@ -33,10 +33,10 @@
     "static/media/axios.png": "/static/media/axios.a5c39f906da099ffbb58.png",
     "index.html": "/index.html",
     "main.6128c058.css.map": "/static/css/main.6128c058.css.map",
-    "main.611c91b5.js.map": "/static/js/main.611c91b5.js.map"
+    "main.5e0d2d20.js.map": "/static/js/main.5e0d2d20.js.map"
   },
   "entrypoints": [
     "static/css/main.6128c058.css",
-    "static/js/main.611c91b5.js"
+    "static/js/main.5e0d2d20.js"
   ]
 }
