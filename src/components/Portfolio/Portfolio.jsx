@@ -98,7 +98,7 @@ export const Portfolio = () => {
               <motion.div className={s.projectBox} initial='hidden'
                           whileInView='visible'
                           viewport={{ amount: 0.2,once: true }}
-                          variants={elemY}>MUSIC APP>
+                          variants={elemY}>
                 <h3 className={s.projTitle}>MUSIC APP</h3>
                 <p>Own project</p>
                 <a className={s.projectPoster} href='https://spotify-clone-music-app.netlify.app/' target="_blank"  rel="noopener noreferrer">
