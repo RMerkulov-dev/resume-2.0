@@ -55,7 +55,8 @@ export const MainPage = () => {
                       viewport={{ amount: 0.2,once: true }}
                       variants={elemOpacity}>
             <h1 className={s.heading1}>Hi there. I am Roman Merkulov</h1>
-            <p>Front-end developer</p>
+            <p style={{fontWeight:600}}>Front-end developer</p>
+            <p>JavaScript / React</p>
             <img src={HeroImage} alt='avatar' />
             <Link to='/reason' className={s.navContent}>LET'S GO</Link>
           </motion.div>
