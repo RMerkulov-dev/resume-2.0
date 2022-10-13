@@ -12,14 +12,40 @@ import Expert from '../../images/hero/experience.png';
 import Mouse from '../../images/hero/mouse.png';
 import Altertech from '../../images/hero/altertech.png';
 import Linkedin from '../../images/header/linkedin.png';
+import { motion } from 'framer-motion';
 
+
+const elemOpacity = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: custom => ({
+    opacity: 1,
+    transition: { delay: custom * 0.4,duration:0.8, },
+  }),
+};
+const elemY = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+
+  },
+  visible: custom => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2,duration:0.8, },
+  }),
+};
 
 export const Experience = () => {
   return (
     <>
       <header className={s.header}>
         <div className={s.container}>
-          <div className={s.headerContainer}>
+          <motion.div className={s.headerContainer} initial='hidden'
+                      whileInView='visible'
+                      viewport={{ amount: 0.2,once: true }}
+                      variants={elemOpacity}>
             <nav className={s.navigation}>
               <button className={s.navBtn} type='button'><img className={s.iconHeader} src={Menu} alt='menu' /></button>
               <Link to='/' className={s.navlink}><img className={s.iconHeader} src={Home} alt='home' /></Link>
@@ -35,17 +61,20 @@ export const Experience = () => {
                                                                                                        alt='github' /></a>
               <a href={Resume} download><img src={Download} alt='download' /></a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </header>
       <main>
         <section>
           <div className={s.container}>
-            <div className={s.experienceWrap}>
+            <motion.div className={s.experienceWrap} initial='hidden'
+                        whileInView='visible'
+                        viewport={{ amount: 0.2,once: true }}
+                        variants={elemY}>
               <img className={s.experienceImg} src={Expert} alt='portfolio' />
               <h1 className={s.heading1}>My commercial experience</h1>
               <img className={s.iconMouse} src={Mouse} alt='icon' />
-            </div>
+            </motion.div>
             <div className={s.experienceBox}>
               <img className={s.aboutImg} src={Altertech} alt='portfolio' />
               <p className={s.aboutText}>From 07.08.2022 <br />
