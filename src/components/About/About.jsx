@@ -102,7 +102,7 @@ export const About = () => {
                         viewport={{ amount: 0.2,once: true }}
                         variants={elemY}>
               <img className={s.aboutImg} src={Photo} alt='portfolio' />
-              <p className={s.aboutText}>From 2021 to 2013, worked as a freelance photographer and creator of 360
+              <p className={s.aboutText}>From 2021 to 2022, worked as a freelance photographer and creator of 360
                 Virtual tours. Mastered and studied one of the most complex editing programs. I also took photos and
                 edited videos. Taught people online.</p>
             </motion.div>
