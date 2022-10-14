@@ -11,8 +11,8 @@ import Linkedin from '../../images/header/linkedin.png';
 import { Link } from 'react-router-dom';
 import s from './MainPage.module.css';
 import { motion } from 'framer-motion';
-import { NavBar } from '../Navigation/NavBar';
-import { useState } from 'react';
+// import { NavBar } from '../Navigation/NavBar';
+// import { useState } from 'react';
 
 const elemOpacity = {
   hidden: {
@@ -25,11 +25,11 @@ const elemOpacity = {
 };
 
 export const MainPage = () => {
-  const [open, SetOpen] = useState(false);
+  // const [open, SetOpen] = useState(false);
 
   return (
     <>
-      {open && <NavBar />}
+      {/*{open && <NavBar />}*/}
       <header className={s.header}>
         <div className={s.container}>
           <motion.div
@@ -43,7 +43,7 @@ export const MainPage = () => {
               <button
                 className={s.navBtn}
                 type="button"
-                onClick={() => SetOpen(true)}
+                // onClick={() => SetOpen(true)}
               >
                 <img className={s.iconHeader} src={Menu} alt="menu" />
               </button>
