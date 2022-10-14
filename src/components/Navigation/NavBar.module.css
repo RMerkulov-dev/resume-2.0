@@ -1,0 +1,38 @@
+.overlay{
+  position: relative;
+  padding: 150px 20px;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 110;
+  background-color: rgba(0, 0, 0, 0.44);
+}
+.navWrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.navItem{
+  border: 3px solid black;
+  transition: 0.3s;
+}
+.navItem:hover{
+  border: 3px solid white;
+  transform: scale(0.95);
+  transition: 0.3s;
+}
+.closeBtn{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%) ;
+  top: 10%;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
