@@ -1,12 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.6128c058.css",
-    "main.js": "/static/js/main.f23526e8.js",
+    "main.css": "/static/css/main.a2d86ff0.css",
+    "main.js": "/static/js/main.ed9aaf9c.js",
     "static/media/cv_roman merkulov.pdf": "/static/media/cv_roman merkulov.9a93d59d65f1f28e0376.pdf",
+    "static/media/projects.png": "/static/media/projects.9c3af74eec1130646356.png",
+    "static/media/experience.png": "/static/media/experience.dd6c7252b5cbaa0bc307.png",
+    "static/media/home.png": "/static/media/home.daa0bc89b19528dcb6e1.png",
     "static/media/developer.png": "/static/media/developer.d1833059726d4eab0cb2.png",
     "static/media/music-app.jpg": "/static/media/music-app.dedd20427f301a42772d.jpg",
+    "static/media/about.png": "/static/media/about.2c0e4093731d37faac4d.png",
     "static/media/hell.jpg": "/static/media/hell.6296b3623f861fd548db.jpg",
     "static/media/filmoteka.jpg": "/static/media/filmoteka.de79caef585ff1dcd657.jpg",
+    "static/media/reason.png": "/static/media/reason.a96e86a8c2b724176049.png",
     "static/media/kapusta.jpg": "/static/media/kapusta.dc9a2f517294a069e7f6.jpg",
     "static/media/tailwind.png": "/static/media/tailwind.417a8ec5dee20fb995d8.png",
     "static/media/goit.png": "/static/media/goit.256d47b10d03a15635ed.png",
@@ -16,11 +21,9 @@
     "static/media/bts.png": "/static/media/bts.4d93bf47826f44274a13.png",
     "static/media/react.png": "/static/media/react.2068e43b0ad4a879af17.png",
     "static/media/phone.png": "/static/media/phone.2ddd243efeb36258a44a.png",
-    "static/media/experience.png": "/static/media/experience.dd6c7252b5cbaa0bc307.png",
     "static/media/question.png": "/static/media/question.0764368f5f2b0c7c7a9b.png",
     "static/media/telegram.png": "/static/media/telegram.1b722a57c2ce8ff2980a.png",
     "static/media/linkedin.png": "/static/media/linkedin.41a23f98c77f41c13b8e.png",
-    "static/media/about.png": "/static/media/about.2c0e4093731d37faac4d.png",
     "static/media/sass.png": "/static/media/sass.da0d9637b178dbf70dc6.png",
     "static/media/portfolio.png": "/static/media/portfolio.d2bf983678522acefe79.png",
     "static/media/mail.png": "/static/media/mail.2c378c9ee25927123f7d.png",
@@ -32,11 +35,11 @@
     "static/media/ship.png": "/static/media/ship.7a76104617c1484f0cf8.png",
     "static/media/axios.png": "/static/media/axios.a5c39f906da099ffbb58.png",
     "index.html": "/index.html",
-    "main.6128c058.css.map": "/static/css/main.6128c058.css.map",
-    "main.f23526e8.js.map": "/static/js/main.f23526e8.js.map"
+    "main.a2d86ff0.css.map": "/static/css/main.a2d86ff0.css.map",
+    "main.ed9aaf9c.js.map": "/static/js/main.ed9aaf9c.js.map"
   },
   "entrypoints": [
-    "static/css/main.6128c058.css",
-    "static/js/main.f23526e8.js"
+    "static/css/main.a2d86ff0.css",
+    "static/js/main.ed9aaf9c.js"
   ]
 }
