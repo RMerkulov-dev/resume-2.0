@@ -18,6 +18,8 @@ import Music from '../../images/portfolio/music-app.jpg'
 import Hell from '../../images/portfolio/hell.jpg'
 import Linkedin from '../../images/header/linkedin.png';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { NavBar } from '../Navigation/NavBar';
 
 const elemOpacity = {
   hidden: {
@@ -44,8 +46,11 @@ const elemY = {
 
 
 export const Portfolio = () => {
+  const [open, SetOpen] = useState(false);
+
   return (
     <>
+      {open && <NavBar  SetOpen={SetOpen} />}
       <header className={s.header}>
         <div className={s.container}>
           <motion.div className={s.headerContainer} initial='hidden'
@@ -53,7 +58,7 @@ export const Portfolio = () => {
                       viewport={{ amount: 0.2,once: true }}
                       variants={elemOpacity}>
             <nav className={s.navigation}>
-              <button className={s.navBtn} type='button'><img className={s.iconHeader} src={Menu} alt='menu' /></button>
+              <button className={s.navBtn} type='button' onClick={()=>SetOpen(true)}><img className={s.iconHeader} src={Menu} alt='menu' /></button>
               <Link to='/' className={s.navlink}><img className={s.iconHeader} src={Home} alt='home' /></Link>
             </nav>
             <div className={s.contactWrapper}>

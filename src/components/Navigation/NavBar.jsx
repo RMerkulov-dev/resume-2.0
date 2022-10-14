@@ -8,12 +8,14 @@ import Close from '../../images/nav/delete.png';
 
 import s from './NavBar.module.css';
 
-export const NavBar = () => {
+
+export const NavBar = ({SetOpen}) => {
+
   return (
     <>
-      <div className={s.overlay}>
+  <div className={s.overlay}>
         <div className={s.navWrapper}>
-          <button className={s.closeBtn}>
+          <button className={s.closeBtn} onClick={()=>SetOpen(false)} >
             <img src={Close} alt="" />
           </button>
           <div className={s.navItem}>
@@ -47,6 +49,8 @@ export const NavBar = () => {
           </div>
         </div>
       </div>
+
+
     </>
   );
 };
