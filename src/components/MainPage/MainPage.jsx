@@ -79,7 +79,7 @@ export const MainPage = () => {
               >
                 <img src={Git} alt="github" />
               </a>
-              <a href={Resume} download>
+              <a className={s.download}  href={Resume} download>
                 <img src={Download} alt="download" />
               </a>
             </div>
@@ -104,6 +104,7 @@ export const MainPage = () => {
               <Link to="/reason" className={s.navContent}>
                 LET'S GO
               </Link>
+
             </motion.div>
           </div>
         </section>

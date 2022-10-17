@@ -24,6 +24,7 @@
 /*=================== HEADER =============*/
 
 .headerContainer{
+
   display: flex;
   align-items: center;
   padding: 10px 0 ;
@@ -98,19 +99,21 @@
     width: 30px;
     height: 30px;
   }
-
 }
+
 
 
 /*=================== HERO =============*/
 
 
 .heroContent{
+  position: relative;
   margin-top: 150px;
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .heroContent img{
   width: 250px;
   margin-left: auto;
@@ -203,3 +206,5 @@
     transform: scale(1);
   }
 }
+
+
