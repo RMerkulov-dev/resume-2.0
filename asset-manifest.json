@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8e3989c.css",
-    "main.js": "/static/js/main.0bb129d6.js",
+    "main.css": "/static/css/main.a4c5ba41.css",
+    "main.js": "/static/js/main.ecdaca53.js",
     "static/media/cv_roman merkulov.pdf": "/static/media/cv_roman merkulov.9a93d59d65f1f28e0376.pdf",
     "static/media/projects.png": "/static/media/projects.9c3af74eec1130646356.png",
     "static/media/experience.png": "/static/media/experience.dd6c7252b5cbaa0bc307.png",
@@ -15,26 +15,17 @@
     "static/media/kapusta.jpg": "/static/media/kapusta.dc9a2f517294a069e7f6.jpg",
     "static/media/goit.png": "/static/media/goit.256d47b10d03a15635ed.png",
     "static/media/360-image.png": "/static/media/360-image.7584382959b3218ebacc.png",
-    "static/media/redux.png": "/static/media/redux.e38a43cb57a122e12dad.png",
     "static/media/altertech.png": "/static/media/altertech.38652ad59cc1eb126043.png",
-    "static/media/bts.png": "/static/media/bts.5ef45e8ca3d61d126ab2.png",
-    "static/media/react.png": "/static/media/react.a5fef5d993ff70323a92.png",
     "static/media/question.png": "/static/media/question.0764368f5f2b0c7c7a9b.png",
-    "static/media/tailwind.png": "/static/media/tailwind.d9013788b1579518c6c3.png",
-    "static/media/css.png": "/static/media/css.130e4f02e4b9da9da36d.png",
-    "static/media/sass.png": "/static/media/sass.250958fd6dd47bf08220.png",
-    "static/media/js.png": "/static/media/js.57056bfb974f6370b627.png",
     "static/media/portfolio.png": "/static/media/portfolio.d2bf983678522acefe79.png",
-    "static/media/material.png": "/static/media/material.db7b63f5e2b5af4ad631.png",
-    "static/media/mouse.png": "/static/media/mouse.88759d80b83de8260e2b.png",
-    "static/media/html.png": "/static/media/html.94b8c51b379aae9dbb30.png",
+    "static/media/night.png": "/static/media/night.17747ead0809cfa6c396.png",
     "static/media/ship.png": "/static/media/ship.7a76104617c1484f0cf8.png",
     "index.html": "/index.html",
-    "main.e8e3989c.css.map": "/static/css/main.e8e3989c.css.map",
-    "main.0bb129d6.js.map": "/static/js/main.0bb129d6.js.map"
+    "main.a4c5ba41.css.map": "/static/css/main.a4c5ba41.css.map",
+    "main.ecdaca53.js.map": "/static/js/main.ecdaca53.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8e3989c.css",
-    "static/js/main.0bb129d6.js"
+    "static/css/main.a4c5ba41.css",
+    "static/js/main.ecdaca53.js"
   ]
 }
