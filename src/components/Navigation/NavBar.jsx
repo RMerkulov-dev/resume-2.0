@@ -13,37 +13,37 @@ export const NavBar = ({SetOpen}) => {
 
   return (
     <>
-  <div className={s.overlay}>
+  <div className={s.overlay} onClick={()=>SetOpen(false)}>
         <div className={s.navWrapper}>
           <button className={s.closeBtn} onClick={()=>SetOpen(false)} >
             <img src={Close} alt="" />
           </button>
           <div className={s.navItem}>
-            <Link to="/">
+            <Link to="/" onClick={()=>SetOpen(false)}>
               <img src={Home} alt="" />
             </Link>
           </div>
           <div className={s.navItem}>
             {' '}
-            <Link to="/reason">
+            <Link to="/reason" onClick={()=>SetOpen(false)}>
               <img src={Reason} alt="" />
             </Link>
           </div>
           <div className={s.navItem}>
             {' '}
-            <Link to="/portfolio">
+            <Link to="/portfolio" onClick={()=>SetOpen(false)}>
               <img src={Projects} alt="" />
             </Link>
           </div>
           <div className={s.navItem}>
             {' '}
-            <Link to="/about">
+            <Link to="/about" onClick={()=>SetOpen(false)}>
               <img src={About} alt="" />
             </Link>
           </div>
           <div className={s.navItem}>
             {' '}
-            <Link to="/experience">
+            <Link to="/experience" onClick={()=>SetOpen(false)}>
               <img src={Experience} alt="" />
             </Link>
           </div>

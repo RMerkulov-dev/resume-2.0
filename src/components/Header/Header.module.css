@@ -48,7 +48,7 @@
   width: 25px;
   height: 25px;
   transition: 0.3s;
-
+color: black;
 }
 .iconHeader:hover{
   transform: translateY(-5px);
@@ -90,6 +90,7 @@
   transition: 0.3s;
 }
 
+
 @media (min-width: 1245px) {
   .iconHeader{
     width: 30px;
@@ -100,6 +101,7 @@
     height: 30px;
   }
 }
+
 
 @keyframes nav {
   0% {

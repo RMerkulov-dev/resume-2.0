@@ -36,8 +36,6 @@ export const About = () => {
 
   return (
     <>
-
-
       <main>
         <section>
           <div className={s.container}>

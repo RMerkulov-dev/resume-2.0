@@ -1,18 +1,17 @@
 import s from './Header.module.css';
 import { motion } from 'framer-motion';
-import Menu from '../../images/header/menu.png';
 import { Link } from 'react-router-dom';
-import Home from '../../images/header/home.png';
-import Mail from '../../images/header/mail.png';
-import Tel from '../../images/header/phone.png';
-import Telegram from '../../images/header/telegram.png';
-import Linkedin from '../../images/header/linkedin.png';
-import Git from '../../images/header/github-header.png';
 import Resume from '../../cv/cv_roman merkulov.pdf';
-import Download from '../../images/header/cv.png';
 import { useState } from 'react';
 import { NavBar } from '../Navigation/NavBar';
-
+import {GrMailOption} from 'react-icons/gr'
+import {BsTelephone} from 'react-icons/bs'
+import {FaTelegramPlane} from 'react-icons/fa'
+import {AiOutlineLinkedin} from 'react-icons/ai'
+import {FiGithub} from 'react-icons/fi'
+import {GrDocumentDownload} from 'react-icons/gr'
+import {RiHome2Line} from 'react-icons/ri'
+import {BsThreeDotsVertical} from 'react-icons/bs'
 
 export const Header=()=>{
   const [open, SetOpen] = useState(false);
@@ -44,42 +43,50 @@ export const Header=()=>{
               type="button"
               onClick={() => SetOpen(true)}
             >
-              <img className={s.iconHeader} src={Menu} alt="menu" />
+              <BsThreeDotsVertical className={s.iconHeader}/>
+              {/*<img className={s.iconHeader} src={Menu} alt="menu" />*/}
             </button>
             <Link to="/" className={s.navlink}>
-              <img className={s.iconHeader} src={Home} alt="home" />
+              {/*<img className={s.iconHeader} src={Home} alt="home" />*/}
+              <RiHome2Line className={s.iconHeader}/>
             </Link>
           </nav>
           <div className={s.contactWrapper}>
             <a href="mailto:fotoromario@gmail.com">
-              <img src={Mail} alt="email" />
+              {/*<img src={Mail} alt="mail" />*/}
+              <GrMailOption className={s.iconHeader}/>
             </a>
             <a href="tel:+380674825841">
-              <img src={Tel} alt="phone" />
+              <BsTelephone className={s.iconHeader}/>
+              {/*<img src={Tel} alt="phone" />*/}
             </a>
             <a
               href="https://telegram.me/romario360"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Telegram} alt="telegram" />
+              {/*<img src={Telegram} alt="telegram" />*/}
+        <FaTelegramPlane className={s.iconHeader}/>
             </a>
             <a
               href="https://www.linkedin.com/in/roman-merkulov-857041241/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Linkedin} alt="github" />
+              {/*<img src={Linkedin} alt="github" />*/}
+              <AiOutlineLinkedin className={s.iconHeader}/>
             </a>
             <a
               href="https://github.com/RoRomario360"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Git} alt="github" />
+              {/*<img src={Git} alt="github" />*/}
+              <FiGithub className={s.iconHeader}/>
             </a>
             <a className={s.download}  href={Resume} download>
-              <img src={Download} alt="download" />
+              {/*<img src={Download} alt="download" />*/}
+              <GrDocumentDownload className={s.iconHeader}/>
             </a>
           </div>
         </motion.div>
