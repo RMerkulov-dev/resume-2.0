@@ -1,18 +1,19 @@
 import s from './Reason.module.css';
 import { Link } from 'react-router-dom';
 import Question from '../../images/hero/question.png';
-import Mouse from '../../images/hero/mouse.png';
-import Html from '../../images/skills/html.png';
-import Css from '../../images/skills/css.png';
-import Sass from '../../images/skills/sass.png';
-import Js from '../../images/skills/js.png';
-import ReactJs from '../../images/skills/react.png';
-import Redux from '../../images/skills/redux.png';
-import Bts from '../../images/skills/bts.png';
-import Axios from '../../images/skills/axios.png';
-import Material from '../../images/skills/material.png';
-import Tailwind from '../../images/skills/tailwind.png';
+import { BsMouse } from 'react-icons/bs';
+import { AiOutlineHtml5 } from 'react-icons/ai';
+import { DiCss3Full } from 'react-icons/di';
+import { DiSass } from 'react-icons/di';
+import { IoLogoJavascript } from 'react-icons/io';
+import { FaReact } from 'react-icons/fa';
+import { SiRedux } from 'react-icons/si';
+import { SiMaterialui } from 'react-icons/si';
+import { FaNodeJs } from 'react-icons/fa';
+import { BsFillBootstrapFill } from 'react-icons/bs';
+import { SiTailwindcss } from 'react-icons/si';
 import { motion } from 'framer-motion';
+
 
 
 const elemOpacity = {
@@ -21,7 +22,7 @@ const elemOpacity = {
   },
   visible: custom => ({
     opacity: 1,
-    transition: { delay: custom * 0.4,duration:0.8, },
+    transition: { delay: custom * 0.4, duration: 0.8 },
   }),
 };
 const elemY = {
@@ -33,7 +34,7 @@ const elemY = {
   visible: custom => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.2,duration:0.8, },
+    transition: { delay: custom * 0.2, duration: 0.8 },
   }),
 };
 const elemOpacityLong = {
@@ -43,7 +44,7 @@ const elemOpacityLong = {
   visible: custom => ({
 
     opacity: 1,
-    transition: { delay: custom * 0.4,duration:2 , },
+    transition: { delay: custom * 0.4, duration: 2 },
   }),
 };
 
@@ -56,46 +57,89 @@ export const Reason = () => {
           <div className={s.container}>
             <motion.div className={s.reasonMain} initial='hidden'
                         whileInView='visible'
-                        viewport={{ amount: 0.2,once: true }}
+                        viewport={{ amount: 0.2, once: true }}
                         variants={elemOpacity}>
               <img className={s.iconQuestion} src={Question} alt='question' />
               <h1 className={s.heading1}>Why me</h1>
-              <img className={s.iconMouse} src={Mouse} alt='icon' />
+              <BsMouse className={s.iconMouse} />
             </motion.div>
             <div className={s.reasonStat}>
               <motion.div className={s.motivated} initial='hidden'
                           whileInView='visible'
-                          viewport={{ amount: 0.2,once: true }}
-                          variants={elemY}>More motivated than 96.6%</motion.div>
+                          viewport={{ amount: 0.2, once: true }}
+                          variants={elemY}>More motivated than 96.6%
+              </motion.div>
               <motion.div className={s.motivated} initial='hidden'
                           whileInView='visible'
-                          viewport={{ amount: 0.2,once: true }}
-                          variants={elemY}>More responsible than 94.4%</motion.div>
+                          viewport={{ amount: 0.2, once: true }}
+                          variants={elemY}>More responsible than 94.4%
+              </motion.div>
               <motion.div className={s.motivated} initial='hidden'
                           whileInView='visible'
-                          viewport={{ amount: 0.2,once: true }}
-                          variants={elemY}>Love front-end more than 99.4%</motion.div>
+                          viewport={{ amount: 0.2, once: true }}
+                          variants={elemY}>Love front-end more than 99.4%
+              </motion.div>
               <motion.div className={s.motivated} initial='hidden'
                           whileInView='visible'
-                          viewport={{ amount: 0.2,once: true }}
-                          variants={elemY} >Had a graphic background
+                          viewport={{ amount: 0.2, once: true }}
+                          variants={elemY}>Had a graphic background
               </motion.div>
               <motion.div className={s.hardSkillsWrap} initial='hidden'
                           whileInView='visible'
-                          viewport={{ amount: 0.2,once: true }}
+                          viewport={{ amount: 0.2, once: true }}
                           variants={elemOpacityLong}>
                 <h2 className={s.heading1}>My hard skills</h2>
                 <div className={s.skillsBox}>
-                  <img className={s.skillImg} src={Html} alt='logo' />
-                  <img className={s.skillImg} src={Css} alt='logo' />
-                  <img className={s.skillImg} src={Sass} alt='logo' />
-                  <img className={s.skillImg} src={Js} alt='logo' />
-                  <img className={s.skillImg} src={ReactJs} alt='logo' />
-                  <img className={s.skillImg} src={Redux} alt='logo' />
-                  <img className={s.skillImg} src={Axios} alt='logo' />
-                  <img className={s.skillImg} src={Material} alt='logo' />
-                  <img className={s.skillImg} src={Tailwind} alt='logo' />
-                  <img className={s.skillImg} src={Bts} alt='logo' />
+                  <div className={s.skillWrapper}>
+                    <AiOutlineHtml5 className={s.html} />
+                    <p className={s.skillName}>HTML</p>
+                  </div>
+                  <div className={s.skillWrapper}>
+                    <DiCss3Full className={s.css} />
+                    <p className={s.skillName}>CSS</p>
+                  </div>
+                  <div className={s.skillWrapper}>
+                    <DiSass className={s.sass} />
+                    <p className={s.skillName}>SASS</p>
+                  </div>
+                  <div className={s.skillWrapper}>
+                    <IoLogoJavascript className={s.js} />
+                    <p className={s.skillName}>JS</p>
+                  </div>
+                  <div className={s.skillWrapper}>
+                    <FaReact className={s.react} />
+                    <p className={s.skillName}>REACT</p>
+                  </div>
+                  <div className={s.skillWrapper}>
+                    <SiRedux className={s.redux} />
+                    <p className={s.skillName}>REDUX</p>
+                  </div>
+                  <div className={s.skillWrapper}>
+                    <FaNodeJs className={s.node} />
+                    <p className={s.skillName}>NODE JS</p>
+                  </div>
+                  <div className={s.skillWrapper}>
+                    <SiMaterialui className={s.material} />
+                    <p className={s.skillName}>MA UI</p>
+                  </div>
+
+                  <div className={s.skillWrapper}>
+                    <BsFillBootstrapFill className={s.bts} />
+                    <p className={s.skillName}>BTS</p>
+                  </div>
+                  <div className={s.skillWrapper}>
+                    <SiTailwindcss className={s.tailw} />
+                    <p className={s.skillName}>TLW</p>
+                  </div>
+                  {/*<img className={s.skillImg} src={Css} alt='logo' />*/}
+                  {/*<img className={s.skillImg} src={Sass} alt='logo' />*/}
+                  {/*<img className={s.skillImg} src={Js} alt='logo' />*/}
+                  {/*<img className={s.skillImg} src={ReactJs} alt='logo' />*/}
+                  {/*<img className={s.skillImg} src={Redux} alt='logo' />*/}
+                  {/*<img className={s.skillImg} src={Axios} alt='logo' />*/}
+                  {/*<img className={s.skillImg} src={Material} alt='logo' />*/}
+                  {/*<img className={s.skillImg} src={Tailwind} alt='logo' />*/}
+                  {/*<img className={s.skillImg} src={Bts} alt='logo' />*/}
                 </div>
                 <Link to='/portfolio' className={s.navContent}>PORTFOLIO</Link>
               </motion.div>

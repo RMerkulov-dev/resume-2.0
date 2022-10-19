@@ -4,14 +4,15 @@ import { Link } from 'react-router-dom';
 import Resume from '../../cv/cv_roman merkulov.pdf';
 import { useState } from 'react';
 import { NavBar } from '../Navigation/NavBar';
-import {GrMailOption} from 'react-icons/gr'
-import {BsTelephone} from 'react-icons/bs'
+import {GoMail} from 'react-icons/go'
+import {AiOutlinePhone} from 'react-icons/ai'
 import {FaTelegramPlane} from 'react-icons/fa'
 import {AiOutlineLinkedin} from 'react-icons/ai'
 import {FiGithub} from 'react-icons/fi'
-import {GrDocumentDownload} from 'react-icons/gr'
+import {AiOutlineFilePdf} from 'react-icons/ai'
 import {RiHome2Line} from 'react-icons/ri'
 import {BsThreeDotsVertical} from 'react-icons/bs'
+import { Toggle } from '../Toggle/Toggle';
 
 export const Header=()=>{
   const [open, SetOpen] = useState(false);
@@ -50,15 +51,17 @@ export const Header=()=>{
               {/*<img className={s.iconHeader} src={Home} alt="home" />*/}
               <RiHome2Line className={s.iconHeader}/>
             </Link>
+            <Toggle/>
           </nav>
           <div className={s.contactWrapper}>
+
+            <a href="tel:+380674825841">
+              <AiOutlinePhone className={s.iconHeader}/>
+              {/*<img src={Tel} alt="phone" />*/}
+            </a>
             <a href="mailto:fotoromario@gmail.com">
               {/*<img src={Mail} alt="mail" />*/}
-              <GrMailOption className={s.iconHeader}/>
-            </a>
-            <a href="tel:+380674825841">
-              <BsTelephone className={s.iconHeader}/>
-              {/*<img src={Tel} alt="phone" />*/}
+              <GoMail className={s.iconHeader}/>
             </a>
             <a
               href="https://telegram.me/romario360"
@@ -86,7 +89,7 @@ export const Header=()=>{
             </a>
             <a className={s.download}  href={Resume} download>
               {/*<img src={Download} alt="download" />*/}
-              <GrDocumentDownload className={s.iconHeader}/>
+              <AiOutlineFilePdf className={s.iconHeader}/>
             </a>
           </div>
         </motion.div>

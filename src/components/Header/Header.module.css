@@ -19,12 +19,11 @@
     width: 1200px;
   }
 }
-/*/////////////////*/
+
 
 /*=================== HEADER =============*/
 
 .headerContainer{
-
   display: flex;
   align-items: center;
   padding: 10px 0 ;
@@ -37,7 +36,7 @@
   margin-right: 5px;
 }
 .navBtn{
-  margin-right: 10px;
+  padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -48,7 +47,7 @@
   width: 25px;
   height: 25px;
   transition: 0.3s;
-color: black;
+color: var(--text-color);
 }
 .iconHeader:hover{
   transform: translateY(-5px);
@@ -89,7 +88,14 @@ color: black;
   transform: translateY(-5px);
   transition: 0.3s;
 }
-
+@media (min-width: 768px) {
+.contactWrapper{
+  gap: 20px;
+}
+  .iconHeader{
+    margin-right: 20px;
+  }
+}
 
 @media (min-width: 1245px) {
   .iconHeader{

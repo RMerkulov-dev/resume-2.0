@@ -1,0 +1,38 @@
+.dark{
+  width: 24px;
+  height: 24px;
+  background-image: url('../../images/header/light.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.8s;
+  color: white;
+  cursor: pointer;
+}
+.light{
+  width: 24px;
+  height: 24px;
+  background-image: url('../../images/header/night.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.8s;
+  cursor: pointer;
+
+}
+@media (min-width: 1245px) {
+  .dark{
+    width: 28px;
+    height: 28px;
+  }
+  .light{
+    width: 28px;
+    height: 28px;
+  }
+  .light:hover{
+    transform: rotate(360deg);
+    transition: 0.5s;
+  }
+  .dark:hover{
+    transform: rotate(90deg);
+    transition: 0.5s;
+  }
+}

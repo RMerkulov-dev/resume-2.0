@@ -1,8 +1,8 @@
 import s from './Experience.module.css';
 import Expert from '../../images/hero/experience.png';
-import Mouse from '../../images/hero/mouse.png';
 import Altertech from '../../images/hero/altertech.png';
 import { motion } from 'framer-motion';
+import { BsMouse } from 'react-icons/bs';
 
 
 
@@ -30,7 +30,7 @@ export const Experience = () => {
                         variants={elemOpacity}>
               <img className={s.experienceImg} src={Expert} alt='portfolio' />
               <h1 className={s.heading1}>My commercial experience</h1>
-              <img className={s.iconMouse} src={Mouse} alt='icon' />
+              <BsMouse className={s.iconMouse} />
             </motion.div>
             <div className={s.experienceBox}>
               <img className={s.aboutImg} src={Altertech} alt='portfolio' />

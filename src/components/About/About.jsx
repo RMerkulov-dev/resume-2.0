@@ -1,12 +1,12 @@
 import s from './About.module.css';
 import { Link } from 'react-router-dom';
 import Card from '../../images/hero/about.png';
-import Mouse from '../../images/hero/mouse.png';
 import Education from '../../images/hero/education.png';
 import Ship from '../../images/hero/ship.png';
 import Photo from '../../images/hero/360-image.png';
 import Goit from '../../images/hero/goit.png';
 import { motion } from 'framer-motion';
+import { BsMouse } from 'react-icons/bs';
 
 
 const elemOpacity = {
@@ -45,7 +45,7 @@ export const About = () => {
                         variants={elemOpacity}>
               <img className={s.portfolioImg} src={Card} alt='portfolio' />
               <h1 className={s.heading1}>Let's look at my story</h1>
-              <img className={s.iconMouse} src={Mouse} alt='icon' />
+              <BsMouse className={s.iconMouse} />
             </motion.div>
 
             <motion.div className={s.aboutContent} initial='hidden'
