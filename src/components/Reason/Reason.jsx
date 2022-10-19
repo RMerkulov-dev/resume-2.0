@@ -13,7 +13,7 @@ import Axios from '../../images/skills/axios.png';
 import Material from '../../images/skills/material.png';
 import Tailwind from '../../images/skills/tailwind.png';
 import { motion } from 'framer-motion';
-import { Header } from '../Header/Header';
+
 
 const elemOpacity = {
   hidden: {
@@ -51,8 +51,6 @@ export const Reason = () => {
 
   return (
     <>
-
-      <Header/>
       <main>
         <section>
           <div className={s.container}>

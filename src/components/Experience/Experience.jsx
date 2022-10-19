@@ -3,7 +3,7 @@ import Expert from '../../images/hero/experience.png';
 import Mouse from '../../images/hero/mouse.png';
 import Altertech from '../../images/hero/altertech.png';
 import { motion } from 'framer-motion';
-import { Header } from '../Header/Header';
+
 
 
 const elemOpacity = {
@@ -21,8 +21,6 @@ export const Experience = () => {
 
   return (
     <>
-
-     <Header/>
       <main>
         <section>
           <div className={s.container}>

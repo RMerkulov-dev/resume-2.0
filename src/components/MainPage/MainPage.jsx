@@ -2,7 +2,7 @@ import HeroImage from '../../images/hero/developer.png';
 import { Link } from 'react-router-dom';
 import s from './MainPage.module.css';
 import { motion } from 'framer-motion';
-import { Header } from '../Header/Header';
+
 
 const elemOpacity = {
   hidden: {
@@ -19,8 +19,8 @@ export const MainPage = () => {
 
   return (
     <>
-      {/*{open && <NavBar  SetOpen={SetOpen} />}*/}
-      <Header/>
+
+
       <main className={s.mainPage}>
         <section>
           <div className={s.container}>

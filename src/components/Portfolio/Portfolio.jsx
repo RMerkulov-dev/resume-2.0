@@ -9,7 +9,7 @@ import Filmoteka from '../../images/portfolio/filmoteka.jpg'
 import Music from '../../images/portfolio/music-app.jpg'
 import Hell from '../../images/portfolio/hell.jpg'
 import { motion } from 'framer-motion';
-import { Header } from '../Header/Header';
+
 
 const elemOpacity = {
   hidden: {
@@ -40,8 +40,6 @@ export const Portfolio = () => {
 
   return (
     <>
-
-     <Header/>
       <main>
         <section>
           <div className={s.container}>

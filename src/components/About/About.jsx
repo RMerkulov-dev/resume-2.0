@@ -7,7 +7,7 @@ import Ship from '../../images/hero/ship.png';
 import Photo from '../../images/hero/360-image.png';
 import Goit from '../../images/hero/goit.png';
 import { motion } from 'framer-motion';
-import { Header } from '../Header/Header';
+
 
 const elemOpacity = {
   hidden: {
@@ -37,7 +37,7 @@ export const About = () => {
   return (
     <>
 
-     <Header/>
+
       <main>
         <section>
           <div className={s.container}>
