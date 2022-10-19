@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef063d22.css",
-    "main.js": "/static/js/main.5e100dfc.js",
+    "main.css": "/static/css/main.3a9c30bd.css",
+    "main.js": "/static/js/main.5b7571b9.js",
     "static/media/cv_roman merkulov.pdf": "/static/media/cv_roman merkulov.9a93d59d65f1f28e0376.pdf",
     "static/media/projects.png": "/static/media/projects.9c3af74eec1130646356.png",
     "static/media/experience.png": "/static/media/experience.dd6c7252b5cbaa0bc307.png",
@@ -35,11 +35,11 @@
     "static/media/html.png": "/static/media/html.94b8c51b379aae9dbb30.png",
     "static/media/ship.png": "/static/media/ship.7a76104617c1484f0cf8.png",
     "index.html": "/index.html",
-    "main.ef063d22.css.map": "/static/css/main.ef063d22.css.map",
-    "main.5e100dfc.js.map": "/static/js/main.5e100dfc.js.map"
+    "main.3a9c30bd.css.map": "/static/css/main.3a9c30bd.css.map",
+    "main.5b7571b9.js.map": "/static/js/main.5b7571b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef063d22.css",
-    "static/js/main.5e100dfc.js"
+    "static/css/main.3a9c30bd.css",
+    "static/js/main.5b7571b9.js"
   ]
 }
