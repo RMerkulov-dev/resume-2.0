@@ -11,10 +11,9 @@ import { SiRedux } from 'react-icons/si';
 import { SiMaterialui } from 'react-icons/si';
 import { FaNodeJs } from 'react-icons/fa';
 import { BsFillBootstrapFill } from 'react-icons/bs';
-import { SiTailwindcss } from 'react-icons/si';
+import { SiTypescript } from 'react-icons/si';
+
 import { motion } from 'framer-motion';
-
-
 
 const elemOpacity = {
   hidden: {
@@ -29,7 +28,6 @@ const elemY = {
   hidden: {
     y: 100,
     opacity: 0,
-
   },
   visible: custom => ({
     y: 0,
@@ -42,52 +40,72 @@ const elemOpacityLong = {
     opacity: 0,
   },
   visible: custom => ({
-
     opacity: 1,
     transition: { delay: custom * 0.4, duration: 2 },
   }),
 };
 
 export const Reason = () => {
-
   return (
     <>
       <main>
         <section>
           <div className={s.container}>
-            <motion.div className={s.reasonMain} initial='hidden'
-                        whileInView='visible'
-                        viewport={{ amount: 0.2, once: true }}
-                        variants={elemOpacity}>
-              <img className={s.iconQuestion} src={Question} alt='question' />
+            <motion.div
+              className={s.reasonMain}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.2, once: true }}
+              variants={elemOpacity}
+            >
+              <img className={s.iconQuestion} src={Question} alt="question" />
               <h1 className={s.heading1}>Why me</h1>
               <BsMouse className={s.iconMouse} />
             </motion.div>
             <div className={s.reasonStat}>
-              <motion.div className={s.motivated} initial='hidden'
-                          whileInView='visible'
-                          viewport={{ amount: 0.2, once: true }}
-                          variants={elemY}>More motivated than 96.6%
+              <motion.div
+                className={s.motivated}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.2, once: true }}
+                variants={elemY}
+              >
+                More motivated than 96.6%
               </motion.div>
-              <motion.div className={s.motivated} initial='hidden'
-                          whileInView='visible'
-                          viewport={{ amount: 0.2, once: true }}
-                          variants={elemY}>More responsible than 94.4%
+              <motion.div
+                className={s.motivated}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.2, once: true }}
+                variants={elemY}
+              >
+                More responsible than 94.4%
               </motion.div>
-              <motion.div className={s.motivated} initial='hidden'
-                          whileInView='visible'
-                          viewport={{ amount: 0.2, once: true }}
-                          variants={elemY}>Love front-end more than 99.4%
+              <motion.div
+                className={s.motivated}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.2, once: true }}
+                variants={elemY}
+              >
+                Love front-end more than 99.4%
               </motion.div>
-              <motion.div className={s.motivated} initial='hidden'
-                          whileInView='visible'
-                          viewport={{ amount: 0.2, once: true }}
-                          variants={elemY}>Had a graphic background
+              <motion.div
+                className={s.motivated}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.2, once: true }}
+                variants={elemY}
+              >
+                Had a graphic background
               </motion.div>
-              <motion.div className={s.hardSkillsWrap} initial='hidden'
-                          whileInView='visible'
-                          viewport={{ amount: 0.2, once: true }}
-                          variants={elemOpacityLong}>
+              <motion.div
+                className={s.hardSkillsWrap}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.2, once: true }}
+                variants={elemOpacityLong}
+              >
                 <h2 className={s.heading1}>My hard skills</h2>
                 <div className={s.skillsBox}>
                   <div className={s.skillWrapper}>
@@ -105,6 +123,10 @@ export const Reason = () => {
                   <div className={s.skillWrapper}>
                     <IoLogoJavascript className={s.js} />
                     <p className={s.skillName}>JS</p>
+                  </div>
+                  <div className={s.skillWrapper}>
+                    <SiTypescript className={s.tailw} />
+                    <p className={s.skillName}>TS</p>
                   </div>
                   <div className={s.skillWrapper}>
                     <FaReact className={s.react} />
@@ -127,21 +149,14 @@ export const Reason = () => {
                     <BsFillBootstrapFill className={s.bts} />
                     <p className={s.skillName}>BTS</p>
                   </div>
-                  <div className={s.skillWrapper}>
-                    <SiTailwindcss className={s.tailw} />
-                    <p className={s.skillName}>TLW</p>
-                  </div>
-                  {/*<img className={s.skillImg} src={Css} alt='logo' />*/}
-                  {/*<img className={s.skillImg} src={Sass} alt='logo' />*/}
-                  {/*<img className={s.skillImg} src={Js} alt='logo' />*/}
-                  {/*<img className={s.skillImg} src={ReactJs} alt='logo' />*/}
-                  {/*<img className={s.skillImg} src={Redux} alt='logo' />*/}
-                  {/*<img className={s.skillImg} src={Axios} alt='logo' />*/}
-                  {/*<img className={s.skillImg} src={Material} alt='logo' />*/}
-                  {/*<img className={s.skillImg} src={Tailwind} alt='logo' />*/}
-                  {/*<img className={s.skillImg} src={Bts} alt='logo' />*/}
+                  {/*<div className={s.skillWrapper}>*/}
+                  {/*  <SiTailwindcss className={s.tailw} />*/}
+                  {/*  <p className={s.skillName}>TLW</p>*/}
+                  {/*</div>*/}
                 </div>
-                <Link to='/portfolio' className={s.navContent}>PORTFOLIO</Link>
+                <Link to="/portfolio" className={s.navContent}>
+                  PORTFOLIO
+                </Link>
               </motion.div>
             </div>
           </div>
