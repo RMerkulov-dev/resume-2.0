@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,medium,black&subset=latin,latin-ext');
-@import-normalize; /* bring in normalize.css styles */
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
 
 *,
 *::before,
@@ -33,20 +33,20 @@ img {
 :root[data-theme='light'] {
   --background-color: rgb(238, 238, 238);
   --text-color: #1c1e21;
-  --motivated:#1c1e21;
+  --motivated: #1c1e21;
 }
 
 :root[data-theme='dark'] {
-  --background-color: #1D1D1D;;
+  --background-color: #1d1d1d;
   --text-color: #f5f6f7;
-  --motivated:#f5f6f7;
+  --motivated: #f5f6f7;
 }
 
 body {
   margin: 0;
-  font-family: 'Montserrat',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--background-color);
@@ -56,13 +56,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-section{
+section {
   padding: 30px 0;
 }
 @media (min-width: 1245px) {
-  section{
+  section {
     padding: 40px 0;
   }
 }
-
-
