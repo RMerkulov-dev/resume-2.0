@@ -34,8 +34,15 @@ export const Experience = () => {
             <div className={s.experienceBox}>
               <img className={s.aboutImg} src={Altertech} alt="portfolio" />
               <p className={s.aboutText}>
-                From 07.08.2022 <br />
+                07.08.2022 - 01.11.2022 <br />
                 Trainee in Altertech
+              </p>
+            </div>
+            <div className={s.experienceBox}>
+              <img className={s.aboutImg} src={Altertech} alt="portfolio" />
+              <p className={s.aboutText}>
+                From 01.11.2022 <br />
+                Front-end developer in Altertech
               </p>
             </div>
           </div>
