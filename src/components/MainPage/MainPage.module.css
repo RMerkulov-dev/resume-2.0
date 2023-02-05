@@ -1,4 +1,4 @@
-@media screen and (min-width: 340px){
+@media screen and (min-width: 340px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -7,6 +7,7 @@
     width: 340px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -14,13 +15,15 @@
     padding-right: 30px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
 }
+
 /*=================== HERO =============*/
-.heroContent{
+.heroContent {
   position: relative;
   margin-top: 150px;
   max-width: 300px;
@@ -28,21 +31,24 @@
   margin-right: auto;
 }
 
-.heroContent img{
+.heroContent img {
   width: 250px;
   margin-left: auto;
   margin-right: auto;
 }
-.heroContent p{
+
+.heroContent p {
   font-size: 20px;
   color: var(--text-color);
 
 }
-.heading1{
+
+.heading1 {
   font-size: 30px;
   color: var(--text-color);
 }
-.navContent{
+
+.navContent {
   overflow: hidden;
   position: relative;
   display: flex;
@@ -61,7 +67,8 @@
   cursor: pointer;
   animation: nav 2s ease-in-out 0s infinite normal forwards;
 }
-.navContent:before{
+
+.navContent:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -70,37 +77,79 @@
   transform: translateX(-100%);
   z-index: -1;
 }
-.navContent:hover:before{
+
+.navContent:hover:before {
   transform: translateX(0);
   transition: 0.5s;
 }
-.navContent:hover{
+
+.navContent:hover {
   color: var(--background-color);
   transition: 0.3s;
 }
 
+.chatWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.chatLink {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1.2);
+  animation: pulse-chat 2s infinite;
+}
+
+.chatLink:hover {
+  transform: scale(1.2);
+}
+
+.chatLink > p {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--chat-color);
+}
+
+.chatIcon {
+  fill: var(--chat-color);
+
+}
+
 @media (min-width: 1245px) {
-  .heading1{
+  .heading1 {
     font-size: 40px;
   }
-  .heroContent{
+
+  .heroContent {
     margin-top: 0;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
   }
-  .heroContent img{
+
+  .heroContent img {
     width: 350px;
     margin-left: auto;
     margin-right: auto;
   }
-  .heroContent p{
-     font-size: 30px;
-   }
-  .navContent{
+
+  .heroContent p {
+    font-size: 30px;
+  }
+
+  .navContent {
     width: 200px;
     height: 40px;
   }
+
   .iconMouse {
     margin-top: 40px;
     width: 40px;
@@ -124,4 +173,25 @@
   }
 }
 
+.blob.purple {
+  background: rgba(142, 68, 173, 1);
+  box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
+  animation: pulse-purple 2s infinite;
+}
 
+@keyframes pulse-chat {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(142, 68, 173, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 0);
+  }
+}
