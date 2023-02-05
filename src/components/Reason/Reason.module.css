@@ -1,4 +1,4 @@
-@media screen and (min-width: 340px){
+@media screen and (min-width: 340px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -7,6 +7,7 @@
     width: 340px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -14,6 +15,7 @@
     padding-right: 30px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -22,17 +24,19 @@
 
 /*=================== MAIN =============*/
 
-.reasonMain{
+.reasonMain {
   margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.iconQuestion{
+
+.iconQuestion {
   width: 250px;
   margin-bottom: 20px;
 }
-.iconMouse{
+
+.iconMouse {
   margin-top: 20px;
   width: 35px;
   height: 35px;
@@ -40,20 +44,22 @@
   animation: scroll 3s ease-in 0s infinite normal forwards;
 }
 
-.heading1{
+.heading1 {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  color:var(--text-color)
+  color: var(--text-color)
 }
-.reasonStat{
+
+.reasonStat {
   margin-top: 200px;
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
-.motivated{
+
+.motivated {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,7 +72,8 @@ display: flex;
   font-size: 11px;
   font-weight: bold;
 }
-.motivated:before{
+
+.motivated:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -76,24 +83,29 @@ display: flex;
   transform: translateX(-100%);
   z-index: -1;
 }
-.motivated:nth-child(2n){
+
+.motivated:nth-child(2n) {
   transform: translateX(10%);
 }
-.motivated:nth-child(2n+1){
+
+.motivated:nth-child(2n+1) {
   transform: translateX(-10%);
 }
-.motivated:hover:before{
+
+.motivated:hover:before {
   transform: translateX(0%);
   transition: 0.5s;
 }
-.motivated:hover{
+
+.motivated:hover {
   color: var(--background-color);
 }
 
-.hardSkillsWrap{
+.hardSkillsWrap {
   margin-top: 100px;
 }
-.skillsBox{
+
+.skillsBox {
   margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -101,12 +113,13 @@ display: flex;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
+
 /*.skillImg{*/
 /*  width: 50px;*/
 /*  height: 50px;*/
 /*  border:2px solid black;*/
 /*}*/
-.skillWrapper{
+.skillWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,63 +128,87 @@ display: flex;
   height: 80px;
   border: 2px solid var(--text-color);
 }
-.html{
+
+.html {
   width: 35px;
   height: 35px;
   color: #ee5121;
 }
-.css{
+
+.css {
   width: 35px;
   height: 35px;
   color: #2192ee;
 }
-.sass{
+
+.sass {
   width: 35px;
   height: 35px;
   color: #e73976;
 }
-.js{
+
+.js {
   width: 35px;
   height: 35px;
   color: #070707;
-  background:yellow;
+  background: yellow;
 }
-.react{
+
+.react {
   width: 35px;
   height: 35px;
   color: #319fee;
 }
-.redux{
+
+.redux {
   width: 35px;
   height: 35px;
   color: #7631ee;
 }
-.material{
+
+.material {
   width: 35px;
   height: 35px;
   color: #0a7def;
 }
-.node{
+
+.node {
   width: 35px;
   height: 35px;
   color: #2aa20d;
 }
-.bts{
+
+.graph {
+  width: 50px;
+  height: 50px;
+  color: #5a1bd7;
+}
+
+.wind {
+  width: 50px;
+  height: 50px;
+  color: #1396be;
+}
+
+.bts {
   width: 35px;
   height: 35px;
   color: #541696;
 }
-.tailw{
+
+.tailw {
   width: 35px;
   height: 35px;
   color: #0a7def;
 }
-.skillName{
+
+.skillName {
   font-size: 15px;
   font-weight: bold;
   color: var(--text-color);
 }
-.navContent{
+
+.navContent {
   overflow: hidden;
   position: relative;
   display: flex;
@@ -190,7 +227,8 @@ display: flex;
   cursor: pointer;
   animation: nav 2s ease-in-out 0s infinite normal forwards;
 }
-.navContent:before{
+
+.navContent:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -199,77 +237,91 @@ display: flex;
   transform: translateX(-100%);
   z-index: -1;
 }
-.navContent:hover:before{
+
+.navContent:hover:before {
   transform: translateX(0);
   transition: 0.5s;
 }
-.navContent:hover{
+
+.navContent:hover {
   color: var(--background-color);
   transition: 0.3s;
 }
 
 @media (min-width: 768px) {
-.skillsBox{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-}
-  .skillWrapper{
+  .skillsBox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .skillWrapper {
     width: 150px;
     height: 130px;
   }
-  .skillName{
+
+  .skillName {
     font-size: 25px;
   }
-  .html{
+
+  .html {
     width: 55px;
     height: 55px;
     color: #ee5121;
   }
-  .css{
+
+  .css {
     width: 55px;
     height: 55px;
     color: #2192ee;
   }
-  .sass{
+
+  .sass {
     width: 55px;
     height: 55px;
     color: #e73976;
   }
-  .js{
+
+  .js {
     width: 55px;
     height: 55px;
     color: #070707;
-    background:yellow;
+    background: yellow;
   }
-  .react{
+
+  .react {
     width: 55px;
     height: 55px;
     color: #319fee;
   }
-  .redux{
+
+  .redux {
     width: 55px;
     height: 55px;
     color: #7631ee;
   }
-  .material{
+
+  .material {
     width: 55px;
     height: 55px;
     color: #0a7def;
   }
-  .node{
+
+  .node {
     width: 55px;
     height: 55px;
     color: #2aa20d;
   }
-  .bts{
+
+  .bts {
     width: 55px;
     height: 55px;
     color: #541696;
   }
-  .tailw{
+
+  .tailw {
     width: 55px;
     height: 55px;
     color: #0a7def;
@@ -277,30 +329,33 @@ display: flex;
 }
 
 @media (min-width: 1245px) {
-  .reasonMain{
+  .reasonMain {
     margin-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .motivated{
+
+  .motivated {
     width: 500px;
     height: 50px;
 
 
     font-size: 20px;
   }
-  .reasonStat{
+
+  .reasonStat {
     gap: 30px;
     margin-top: 200px;
   }
-  .skillImg{
+
+  .skillImg {
     width: 100px;
     height: 100px;
-    border:2px solid black;
+    border: 2px solid black;
   }
 
-  .skillsBox{
+  .skillsBox {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -308,18 +363,20 @@ display: flex;
     grid-row-gap: 20px;
   }
 
-  .navContent{
+  .navContent {
     width: 200px;
     height: 40px;
   }
 
-  .iconQuestion{
+  .iconQuestion {
     width: 350px;
     margin-bottom: 20px;
   }
-  .heading1{
+
+  .heading1 {
     font-size: 40px;
   }
+
   .iconMouse {
     margin-top: 40px;
     width: 40px;
