@@ -2,7 +2,7 @@ import HeroImage from '../../images/hero/developer.png';
 import { Link } from 'react-router-dom';
 import s from './MainPage.module.css';
 import { motion } from 'framer-motion';
-
+import { SiOpenai } from 'react-icons/si';
 
 const elemOpacity = {
   hidden: {
@@ -15,8 +15,6 @@ const elemOpacity = {
 };
 
 export const MainPage = () => {
-
-
   return (
     <>
       <main className={s.mainPage}>
@@ -36,8 +34,21 @@ export const MainPage = () => {
               <Link to="/reason" className={s.navContent}>
                 LET'S GO
               </Link>
-
             </motion.div>
+            <div className={s.chatWrapper}>
+              <a
+                className={s.chatLink}
+                href="https://my-chat-five.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p>Chat</p>
+                <SiOpenai
+                  style={{ width: '30px', height: '30px' }}
+                  className={s.chatIcon}
+                />
+              </a>
+            </div>
           </div>
         </section>
       </main>

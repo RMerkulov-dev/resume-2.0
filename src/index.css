@@ -10,12 +10,14 @@
 a {
   text-decoration: none;
 }
+
 ul,
 ol {
   padding: 0;
   list-style: none;
   margin: 0;
 }
+
 p,
 h1,
 h2,
@@ -24,6 +26,7 @@ h4 {
   padding: 0;
   margin: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -34,19 +37,21 @@ img {
   --background-color: rgb(238, 238, 238);
   --text-color: #1c1e21;
   --motivated: #1c1e21;
+  --chat-color: #340a72
 }
 
 :root[data-theme='dark'] {
   --background-color: #1d1d1d;
   --text-color: #f5f6f7;
   --motivated: #f5f6f7;
+  --chat-color: #f38211
 }
 
 body {
   margin: 0;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--background-color);
@@ -54,11 +59,13 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
+
 section {
   padding: 30px 0;
 }
+
 @media (min-width: 1245px) {
   section {
     padding: 40px 0;
