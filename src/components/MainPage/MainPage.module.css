@@ -91,7 +91,7 @@
 .chatWrapper {
   display: flex;
   justify-content: flex-end;
-  margin-right: 30px;
+  /*margin-right: 10px;*/
 }
 
 .chatLink {
