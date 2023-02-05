@@ -12,6 +12,8 @@ import { SiMaterialui } from 'react-icons/si';
 import { FaNodeJs } from 'react-icons/fa';
 import { BsFillBootstrapFill } from 'react-icons/bs';
 import { SiTypescript } from 'react-icons/si';
+import { GrGraphQl } from 'react-icons/gr';
+import { SiTailwindcss } from 'react-icons/si';
 
 import { motion } from 'framer-motion';
 
@@ -141,6 +143,10 @@ export const Reason = () => {
                     <p className={s.skillName}>NODE JS</p>
                   </div>
                   <div className={s.skillWrapper}>
+                    <GrGraphQl className={s.graph} />
+                    <p className={s.skillName}>GRAPHQL</p>
+                  </div>
+                  <div className={s.skillWrapper}>
                     <SiMaterialui className={s.material} />
                     <p className={s.skillName}>MA UI</p>
                   </div>
@@ -149,10 +155,10 @@ export const Reason = () => {
                     <BsFillBootstrapFill className={s.bts} />
                     <p className={s.skillName}>BTS</p>
                   </div>
-                  {/*<div className={s.skillWrapper}>*/}
-                  {/*  <SiTailwindcss className={s.tailw} />*/}
-                  {/*  <p className={s.skillName}>TLW</p>*/}
-                  {/*</div>*/}
+                  <div className={s.skillWrapper}>
+                    <SiTailwindcss className={s.wind} />
+                    <p className={s.skillName}>TAILWIND</p>
+                  </div>
                 </div>
                 <Link to="/portfolio" className={s.navContent}>
                   PORTFOLIO
