@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.64c4ed79.css",
-    "main.js": "/static/js/main.f72dab7b.js",
+    "main.js": "/static/js/main.27e881aa.js",
     "static/media/your_fitness.png": "/static/media/your_fitness.0cca03c2f83902816c34.png",
-    "static/media/cv_roman merkulov.pdf": "/static/media/cv_roman merkulov.83ac9caffb35dc8d0337.pdf",
+    "static/media/cv_roman merkulov.pdf": "/static/media/cv_roman merkulov.15a962fc569044312576.pdf",
     "static/media/projects.png": "/static/media/projects.9c3af74eec1130646356.png",
     "static/media/experience.png": "/static/media/experience.dd6c7252b5cbaa0bc307.png",
     "static/media/home.png": "/static/media/home.daa0bc89b19528dcb6e1.png",
@@ -23,10 +23,10 @@
     "static/media/ship.png": "/static/media/ship.7a76104617c1484f0cf8.png",
     "index.html": "/index.html",
     "main.64c4ed79.css.map": "/static/css/main.64c4ed79.css.map",
-    "main.f72dab7b.js.map": "/static/js/main.f72dab7b.js.map"
+    "main.27e881aa.js.map": "/static/js/main.27e881aa.js.map"
   },
   "entrypoints": [
     "static/css/main.64c4ed79.css",
-    "static/js/main.f72dab7b.js"
+    "static/js/main.27e881aa.js"
   ]
 }
