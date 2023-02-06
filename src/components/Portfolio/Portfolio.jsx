@@ -99,7 +99,7 @@ export const Portfolio = () => {
                 <p className={s.projSubtitle}>Own project</p>
                 <a
                   className={s.projectPoster}
-                  href="https://kapusta-project-app.netlify.app/main"
+                  href="https://your-fitness.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
