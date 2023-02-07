@@ -47,6 +47,7 @@ export const MainPage = () => {
             onClick={() => setShowChat(false)}
           />
           <iframe
+            title="chat window"
             className={s.chatWindow}
             src="https://my-chat-five.vercel.app/"
             style={{}}
