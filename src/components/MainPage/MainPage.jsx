@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import s from './MainPage.module.css';
 import { motion } from 'framer-motion';
 import { SiOpenai } from 'react-icons/si';
+import { useCallback, useEffect, useState } from 'react';
+import { RiCloseCircleLine } from 'react-icons/ri';
 
 const elemOpacity = {
   hidden: {
@@ -15,8 +17,43 @@ const elemOpacity = {
 };
 
 export const MainPage = () => {
+  const [showChat, setShowChat] = useState(false);
+
+  const handleClick = () => {
+    setShowChat(!showChat);
+  };
+
+  const handleClose = useCallback(
+    e => {
+      if (e.code === 'Escape') {
+        setShowChat(false);
+        document.removeEventListener('keydown', handleClose);
+      }
+      setShowChat(false);
+    },
+    [setShowChat]
+  );
+  useEffect(() => {
+    document.addEventListener('keydown', handleClose);
+  }, [handleClose]);
+
   return (
     <>
+      {showChat && (
+        <div className={s.backdrop} onClick={handleClose}>
+          <RiCloseCircleLine
+            type="button"
+            className={s.btnClose}
+            onClick={() => setShowChat(false)}
+          />
+          <iframe
+            title="chat window"
+            className={s.chatWindow}
+            src="https://my-chat-five.vercel.app/"
+            style={{}}
+          />
+        </div>
+      )}
       <main className={s.mainPage}>
         <section>
           <div className={s.container}>
@@ -36,18 +73,13 @@ export const MainPage = () => {
               </Link>
             </motion.div>
             <div className={s.chatWrapper}>
-              <a
-                className={s.chatLink}
-                href="https://my-chat-five.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <p>Chat</p>
+              <button className={s.chatBtn} onClick={handleClick}>
+                Chat
                 <SiOpenai
                   style={{ width: '30px', height: '30px' }}
                   className={s.chatIcon}
                 />
-              </a>
+              </button>
             </div>
           </div>
         </section>
