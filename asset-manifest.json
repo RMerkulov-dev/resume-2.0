@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.296f2308.css",
-    "main.js": "/static/js/main.b0af7500.js",
+    "main.css": "/static/css/main.e211e1ff.css",
+    "main.js": "/static/js/main.06acf877.js",
     "static/media/your_fitness.png": "/static/media/your_fitness.0cca03c2f83902816c34.png",
     "static/media/cv_roman merkulov.pdf": "/static/media/cv_roman merkulov.15a962fc569044312576.pdf",
     "static/media/projects.png": "/static/media/projects.9c3af74eec1130646356.png",
@@ -13,6 +13,7 @@
     "static/media/hell.jpg": "/static/media/hell.6296b3623f861fd548db.jpg",
     "static/media/filmoteka.jpg": "/static/media/filmoteka.de79caef585ff1dcd657.jpg",
     "static/media/reason.png": "/static/media/reason.a96e86a8c2b724176049.png",
+    "static/media/pro_test.png": "/static/media/pro_test.33f6277beb09817be711.png",
     "static/media/kapusta.jpg": "/static/media/kapusta.dc9a2f517294a069e7f6.jpg",
     "static/media/goit.png": "/static/media/goit.256d47b10d03a15635ed.png",
     "static/media/360-image.png": "/static/media/360-image.7584382959b3218ebacc.png",
@@ -22,11 +23,11 @@
     "static/media/night.png": "/static/media/night.17747ead0809cfa6c396.png",
     "static/media/ship.png": "/static/media/ship.7a76104617c1484f0cf8.png",
     "index.html": "/index.html",
-    "main.296f2308.css.map": "/static/css/main.296f2308.css.map",
-    "main.b0af7500.js.map": "/static/js/main.b0af7500.js.map"
+    "main.e211e1ff.css.map": "/static/css/main.e211e1ff.css.map",
+    "main.06acf877.js.map": "/static/js/main.06acf877.js.map"
   },
   "entrypoints": [
-    "static/css/main.296f2308.css",
-    "static/js/main.b0af7500.js"
+    "static/css/main.e211e1ff.css",
+    "static/js/main.06acf877.js"
   ]
 }
