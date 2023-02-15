@@ -1,4 +1,4 @@
-@media screen and (min-width: 340px){
+@media screen and (min-width: 340px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -7,6 +7,7 @@
     width: 340px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -14,6 +15,7 @@
     padding-right: 30px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -21,62 +23,76 @@
 }
 
 /*========= main =============*/
-.heading1{
+.heading1 {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
   color: var(--text-color);
 }
-.portfolioImg{
+
+.portfolioImg {
   width: 250px;
   margin-bottom: 20px;
 
 }
-.portfolioMain{
+
+.portfolioMain {
   margin-top: 150px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.portfolioWrapper{
+
+.portfolioWrapper {
   margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
 }
-.projectBox{
+
+.projectBox {
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
 }
-.projectPoster{
+
+.projectPoster {
+  position: relative;
+  overflow: hidden;
   margin-top: 10px;
   width: 300px;
   height: 160px;
   border: 2px solid black;
   transition: 0.3s;
 }
-.projectPoster:hover{
-transform: scale(0.9);
+
+.projectPoster:hover {
+  transform: scale(0.9);
   transition: 0.3s;
   border: 4px solid #f38211;
 }
-.projectPoster img{
+
+.projectPoster img {
   width: 100%;
   height: 100%;
 }
-.projTitle{
+
+.projTitle {
   font-size: 25px;
   font-weight: bold;
   color: var(--text-color);
 }
-.projSubtitle{
+
+.projSubtitle {
   font-size: 20px;
   color: var(--text-color);
 }
-.iconMouse{
+
+.iconMouse {
   margin-top: 20px;
   width: 35px;
   height: 35px;
@@ -84,43 +100,51 @@ transform: scale(0.9);
   animation: scroll 3s ease-in 0s infinite normal forwards;
 
 }
-.linksList{
+
+.linksList {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
 }
-.listIcon{
+
+.listIcon {
   width: 35px;
   height: 35px;
   margin-right: 15px;
   color: var(--text-color);
 }
-.linksList li{
+
+.linksList li {
   transition: 0.3s;
 }
-.linksList li:hover{
+
+.linksList li:hover {
   transform: scale(1.2);
   transition: 0.3s;
 }
-.projectDescription{
+
+.projectDescription {
   margin-top: 5px;
   width: 320px;
   height: 200px;
   border: 2px dashed black;
 }
-.softList{display: flex;
+
+.softList {
+  display: flex;
   margin-top: 60px;
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 255, 255);
 }
-.softList img{
+
+.softList img {
   width: 40px;
   height: 40px;
 }
 
-.navContent{
+.navContent {
   overflow: hidden;
   position: relative;
   display: flex;
@@ -139,7 +163,8 @@ transform: scale(0.9);
   cursor: pointer;
   animation: nav 2s ease-in-out 0s infinite normal forwards;
 }
-.navContent:before{
+
+.navContent:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -148,17 +173,46 @@ transform: scale(0.9);
   transform: translateX(-100%);
   z-index: -1;
 }
-.navContent:hover:before{
+
+.navContent:hover:before {
   transform: translateX(0);
   transition: 0.5s;
 }
-.navContent:hover{
+
+.navContent:hover {
   color: var(--background-color);
   transition: 0.3s;
 }
 
+.projectStack {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.5); /* Set the background color and opacity */
+  backdrop-filter: blur(10px);
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.projectPoster:hover .projectStack {
+  transform: translateY(0);
+  transition: 0.5s;
+}
+
+.stackItem {
+  width: 20px;
+  height: 20px;
+  fill: #1c1e21;
+}
+
 @media (min-width: 1245px) {
-  .portfolioWrapper{
+  .portfolioWrapper {
     margin-top: 200px;
     display: flex;
     flex-direction: row;
@@ -166,41 +220,54 @@ transform: scale(0.9);
     align-items: center;
     gap: 80px;
   }
-  .projTitle{
+
+  .projTitle {
     font-size: 30px;
   }
-  .heading1{
+
+  .heading1 {
     font-size: 40px;
     color: var(--text-color);
   }
 
-  .projectPoster{
+  .projectPoster {
     margin-top: 10px;
     width: 490px;
     height: 260px;
   }
+
   .iconMouse {
     margin-top: 40px;
     width: 35px;
     height: 35px;
     color: var(--text-color);
   }
-  .linksList img{
+
+  .linksList img {
     width: 40px;
     height: 40px;
     margin-right: 25px;
   }
-  .navContent{
+
+  .navContent {
     width: 200px;
     height: 40px;
   }
-  .portfolioImg{
+
+  .portfolioImg {
     width: 350px;
     margin-bottom: 20px;
   }
-  .portfolioMain{
+
+  .portfolioMain {
     margin-top: 0;
 
+  }
+
+  .stackItem {
+    width: 40px;
+    height: 40px;
+    fill: #1c1e21;
   }
 }
 
