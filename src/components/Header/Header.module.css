@@ -1,4 +1,4 @@
-@media screen and (min-width: 340px){
+@media screen and (min-width: 340px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -7,6 +7,7 @@
     width: 340px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -14,6 +15,7 @@
     padding-right: 30px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -23,19 +25,22 @@
 
 /*=================== HEADER =============*/
 
-.headerContainer{
+.headerContainer {
   display: flex;
   align-items: center;
-  padding: 10px 0 ;
+  padding: 10px 0;
 }
-.navigation{
+
+.navigation {
   display: flex;
   align-items: baseline;
 }
-.navlink{
+
+.navlink {
   margin-right: 5px;
 }
-.navBtn{
+
+.navBtn {
   padding: 0;
   border: none;
   background-color: transparent;
@@ -43,27 +48,31 @@
 }
 
 /*fix*/
-.iconHeader{
+.iconHeader {
   width: 25px;
   height: 25px;
   transition: 0.3s;
-color: var(--text-color);
+  color: var(--text-color);
 }
-.iconHeader:hover{
+
+.iconHeader:hover {
   transform: translateY(-5px);
   transition: 0.3s;
 }
-.nameText{
+
+.nameText {
   font-size: 15px;
   font-weight: bold;
   margin-left: auto;
 }
-.contactsList{
+
+.contactsList {
   display: flex;
   align-items: baseline;
   margin-left: auto;
 }
-.contactsList a{
+
+.contactsList a {
   margin-bottom: 5px;
   display: flex;
   align-items: center;
@@ -71,38 +80,62 @@ color: var(--text-color);
   font-size: 10px;
   color: rgba(0, 0, 0, 0.7);
 }
-.contactWrapper{
+
+.contactWrapper {
   margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.contactWrapper a{
+
+.contactWrapper a {
   width: 25px;
   height: 25px;
   transition: 0.3s;
 
 }
-.contactWrapper a:hover{
+
+.contactWrapper a:hover {
   transform: translateY(-5px);
   transition: 0.3s;
 }
-@media (min-width: 768px) {
-.contactWrapper{
-  gap: 20px;
+
+.download {
+  position: relative;
 }
-  .iconHeader{
+
+.download:after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/header/upward-arrow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 50;
+  animation: myAnim 2s ease-in-out 0s 1000 normal none;
+}
+
+@media (min-width: 768px) {
+  .contactWrapper {
+    gap: 20px;
+  }
+
+  .iconHeader {
     margin-right: 20px;
   }
 }
 
 @media (min-width: 1245px) {
-  .iconHeader{
+  .iconHeader {
     width: 30px;
     height: 30px;
   }
-  .contactWrapper a{
+
+  .contactWrapper a {
     width: 30px;
     height: 30px;
   }
@@ -120,5 +153,22 @@ color: var(--text-color);
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.2);
+  }
+
+  80% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2.2);
   }
 }
