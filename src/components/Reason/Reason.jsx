@@ -127,7 +127,7 @@ export const Reason = () => {
                     <p className={s.skillName}>JS</p>
                   </div>
                   <div className={s.skillWrapper}>
-                    <SiTypescript className={s.tailw} />
+                    <SiTypescript className={s.ts} />
                     <p className={s.skillName}>TS</p>
                   </div>
                   <div className={s.skillWrapper}>
