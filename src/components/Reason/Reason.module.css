@@ -196,10 +196,16 @@
   color: #541696;
 }
 
-.tailw {
+.ts {
   width: 35px;
   height: 35px;
   color: #0a7def;
+}
+
+.wind {
+  width: 35px;
+  height: 35px;
+  color: #18bed5;
 }
 
 .skillName {
@@ -321,7 +327,19 @@
     color: #541696;
   }
 
-  .tailw {
+  .graph {
+    width: 55px;
+    height: 55px;
+    color: #5a1bd7;
+  }
+
+  .wind {
+    width: 55px;
+    height: 55px;
+    color: #18bed5;
+  }
+
+  .ts {
     width: 55px;
     height: 55px;
     color: #0a7def;
