@@ -1,4 +1,4 @@
-import HeroImage from '../../images/hero/developer.png';
+// import HeroImage from '../../images/hero/developer.png';
 import { Link } from 'react-router-dom';
 import s from './MainPage.module.css';
 import { motion } from 'framer-motion';
