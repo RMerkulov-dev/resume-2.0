@@ -7,6 +7,8 @@ import { useCallback, useEffect, useState } from 'react';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import ComputerCanvas from '../ComputerCanvas/ComputerCanvas';
 
+//update
+
 const elemOpacity = {
   hidden: {
     opacity: 0,
