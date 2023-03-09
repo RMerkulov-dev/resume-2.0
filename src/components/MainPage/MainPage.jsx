@@ -67,9 +67,12 @@ export const MainPage = () => {
               viewport={{ amount: 0.2, once: true }}
               variants={elemOpacity}
             >
-              <h1 className={s.heading1}>Hi there. I am Roman Merkulov</h1>
-              <p style={{ fontWeight: 600 }}>Front-end developer</p>
-              <p>JavaScript / React</p>
+              <div className={s.heroText}>
+                <h1 className={s.heading1}>Hi there. I am Roman Merkulov</h1>
+                <p style={{ fontWeight: 600 }}>Front-end developer</p>
+                <p>JavaScript / React</p>
+              </div>
+
               <div className={s.heroComputer}>
                 <ComputerCanvas />
               </div>

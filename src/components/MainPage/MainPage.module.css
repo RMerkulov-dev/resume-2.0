@@ -2,7 +2,7 @@
   .container {
     margin: 0 auto;
     padding: 0 15px;
-    width: 340px;
+    /*width: 340px;*/
   }
 }
 
@@ -10,20 +10,20 @@
   .container {
     margin: 0 auto;
     padding: 0 15px;
-    width: 540px;
+    /*width: 540px;*/
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    /*width: 768px;*/
     padding: 0 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    /*width: 1200px;*/
   }
 }
 
@@ -34,6 +34,11 @@
   /*max-width: 300px;*/
   margin-left: auto;
   margin-right: auto;
+}
+
+.heroText {
+  margin: 0 auto;
+  width: 300px;
 }
 
 .heroContent img {
@@ -162,6 +167,13 @@
   height: 400px;
 }
 
+@media (min-width: 768px) {
+  .heroText {
+    margin: 0 auto;
+    width: 600px;
+  }
+}
+
 @media (min-width: 1245px) {
   .heading1 {
     font-size: 40px
@@ -169,6 +181,11 @@
 
   .heroComputer {
     height: 450px;
+  }
+
+  .heroText {
+    margin: 0 auto;
+    width: 900px;
   }
 
   .heroContent {
