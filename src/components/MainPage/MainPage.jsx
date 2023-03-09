@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { SiOpenai } from 'react-icons/si';
 import { useCallback, useEffect, useState } from 'react';
 import { RiCloseCircleLine } from 'react-icons/ri';
+import ComputerCanvas from '../ComputerCanvas/ComputerCanvas';
 
 const elemOpacity = {
   hidden: {
@@ -67,7 +68,11 @@ export const MainPage = () => {
               <h1 className={s.heading1}>Hi there. I am Roman Merkulov</h1>
               <p style={{ fontWeight: 600 }}>Front-end developer</p>
               <p>JavaScript / React</p>
-              <img src={HeroImage} alt="avatar" />
+              <div className={s.heroComputer}>
+                <ComputerCanvas />
+              </div>
+
+              {/*<img src={HeroImage} alt="avatar" />*/}
               <Link to="/reason" className={s.navContent}>
                 LET'S GO
               </Link>

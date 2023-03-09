@@ -210,6 +210,11 @@
   animation: pulse-purple 2s infinite;
 }
 
+.heroComputer {
+  /*width: 1300px;*/
+  height: 400px;
+}
+
 @keyframes pulse-chat {
   0% {
     transform: scale(0.95);
