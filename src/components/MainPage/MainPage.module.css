@@ -1,18 +1,23 @@
 @media screen and (min-width: 340px) {
   .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0 auto;
+    padding: 0 15px;
     width: 340px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 540px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
   }
 }
 
@@ -26,7 +31,7 @@
 .heroContent {
   position: relative;
   margin-top: 80px;
-  max-width: 300px;
+  /*max-width: 300px;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -153,6 +158,11 @@
   border-radius: 10px;
 }
 
+@media (min-width: 768px) {
+  .heroContent {
+    max-width: 100%;
+  }
+}
 
 @media (min-width: 1245px) {
   .heading1 {
@@ -209,6 +219,7 @@
   box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
   animation: pulse-purple 2s infinite;
 }
+
 
 @keyframes pulse-chat {
   0% {
