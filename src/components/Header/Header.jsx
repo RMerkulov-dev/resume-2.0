@@ -1,7 +1,7 @@
 import s from './Header.module.css';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import Resume from '../../cv/cv_roman merkulov.pdf';
+import Resume from '../../cv/cv_roman_merkylov.pdf';
 import { useState } from 'react';
 import { NavBar } from '../Navigation/NavBar';
 import { GoMail } from 'react-icons/go';
