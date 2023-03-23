@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { set } from '../../redux/slice';
+import { set } from 'redux/slice';
 import { useEffect } from 'react';
 import s from './Toggle.module.css';
 import cn from 'classnames';
