@@ -14,6 +14,7 @@ import { BsFillBootstrapFill } from 'react-icons/bs';
 import { SiTypescript } from 'react-icons/si';
 import { GrGraphQl } from 'react-icons/gr';
 import { SiTailwindcss } from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
 
 import { motion } from 'framer-motion';
 
@@ -137,6 +138,10 @@ export const Reason = () => {
                   <div className={s.skillWrapper}>
                     <SiRedux className={s.redux} />
                     <p className={s.skillName}>REDUX</p>
+                  </div>
+                  <div className={s.skillWrapper}>
+                    <TbBrandNextjs className={s.next} />
+                    <p className={s.skillName}>NextJS</p>
                   </div>
                   <div className={s.skillWrapper}>
                     <FaNodeJs className={s.node} />

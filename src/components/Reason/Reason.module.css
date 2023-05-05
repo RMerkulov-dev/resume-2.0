@@ -165,6 +165,11 @@
   height: 35px;
   color: #7631ee;
 }
+.next {
+  width: 35px;
+  height: 35px;
+  color: rgba(255, 255, 255, 0.69);
+}
 
 .material {
   width: 35px;
@@ -307,6 +312,11 @@
     width: 55px;
     height: 55px;
     color: #7631ee;
+  }
+  .next {
+    width: 55px;
+    height: 55px;
+    color: rgba(255, 255, 255, 0.69);
   }
 
   .material {
