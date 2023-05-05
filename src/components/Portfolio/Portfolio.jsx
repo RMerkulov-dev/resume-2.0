@@ -9,6 +9,7 @@ import Filmoteka from '../../images/portfolio/filmoteka.jpg';
 import Music from '../../images/portfolio/music-app.jpg';
 import Hell from '../../images/portfolio/hell.jpg';
 import Fitness from '../../images/portfolio/your_fitness.png';
+import Housing from '../../images/portfolio/housing.jpg';
 import { motion } from 'framer-motion';
 import { BsMouse } from 'react-icons/bs';
 
@@ -16,11 +17,12 @@ import { AiOutlineHtml5 } from 'react-icons/ai';
 import { DiCss3Full } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaReact } from 'react-icons/fa';
-import { SiRedux } from 'react-icons/si';
+import { SiPrisma, SiRedux } from 'react-icons/si';
 import { SiMaterialui } from 'react-icons/si';
 import { FaNodeJs } from 'react-icons/fa';
 import { SiTypescript } from 'react-icons/si';
 import { SiTailwindcss } from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
 
 const elemOpacity = {
   hidden: {
@@ -61,6 +63,53 @@ export const Portfolio = () => {
               <BsMouse className={s.iconMouse} />
             </motion.div>
             <div className={s.portfolioWrapper}>
+              <motion.div
+                className={s.projectBox}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.2, once: true }}
+                variants={elemY}
+              >
+                <h3 className={s.projTitle}>HOUSING.COM</h3>
+                <p className={s.projSubtitle}>Own project</p>
+                <a
+                  className={s.projectPoster}
+                  href="https://rent-my-living-space.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className={s.projectStack}>
+                    <AiOutlineHtml5 className={s.stackItem} />
+                    <SiTailwindcss className={s.stackItem} />
+                    <IoLogoJavascript className={s.stackItem} />
+                    <FaReact className={s.stackItem} />
+                    <SiTypescript className={s.stackItem} />
+                    <TbBrandNextjs className={s.nextItem} />
+                    <SiPrisma className={s.stackItem} />
+                  </div>
+                  <img src={Housing} alt="link" />
+                </a>
+                <ul className={s.linksList}>
+                  <li>
+                    <a
+                      href="https://rent-my-living-space.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <BiLinkAlt className={s.listIcon} />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/RoRomario360/rent-my-living-space"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FiGithub className={s.listIcon} />
+                    </a>
+                  </li>
+                </ul>
+              </motion.div>
               <motion.div
                 className={s.projectBox}
                 initial="hidden"
@@ -153,7 +202,7 @@ export const Portfolio = () => {
                   </li>
                 </ul>
               </motion.div>
-              
+
               <motion.div
                 className={s.projectBox}
                 initial="hidden"
@@ -245,7 +294,6 @@ export const Portfolio = () => {
                   </li>
                 </ul>
               </motion.div>
-
 
               <motion.div
                 className={s.projectBox}

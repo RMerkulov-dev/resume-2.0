@@ -210,6 +210,11 @@
   height: 20px;
   fill: #1c1e21;
 }
+.nextItem{
+  width: 20px;
+  height: 20px;
+  color: #1c1e21;
+}
 
 @media (min-width: 1245px) {
   .portfolioWrapper {
@@ -268,6 +273,11 @@
     width: 40px;
     height: 40px;
     fill: #1c1e21;
+  }
+  .nextItem{
+    width: 40px;
+    height: 40px;
+    color: #1c1e21;
   }
 }
 
