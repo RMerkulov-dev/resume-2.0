@@ -7,7 +7,7 @@ import { DiCss3Full } from 'react-icons/di';
 import { DiSass } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaReact } from 'react-icons/fa';
-import { SiRedux } from 'react-icons/si';
+import { SiRedux, SiJest, SiTestinglibrary } from 'react-icons/si';
 import { SiMaterialui } from 'react-icons/si';
 import { FaNodeJs } from 'react-icons/fa';
 import { BsFillBootstrapFill } from 'react-icons/bs';
@@ -163,6 +163,14 @@ export const Reason = () => {
                   <div className={s.skillWrapper}>
                     <SiTailwindcss className={s.wind} />
                     <p className={s.skillName}>TAILWIND</p>
+                  </div>
+                  <div className={s.skillWrapper}>
+                    <SiJest className={s.test} />
+                    <p className={s.skillName}>JEST</p>
+                  </div>
+                  <div className={s.skillWrapper}>
+                    <SiTestinglibrary className={s.test} />
+                    <p className={s.skillName}>RTL</p>
                   </div>
                 </div>
                 <Link to="/portfolio" className={s.navContent}>

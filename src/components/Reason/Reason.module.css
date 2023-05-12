@@ -212,6 +212,11 @@
   height: 35px;
   color: #18bed5;
 }
+.test{
+  width: 35px;
+  height: 35px;
+  color: #cc2634;
+}
 
 .skillName {
   font-size: 15px;
@@ -347,6 +352,11 @@
     width: 55px;
     height: 55px;
     color: #18bed5;
+  }
+  .test{
+    width: 55px;
+    height: 55px;
+    color: #cc2634;
   }
 
   .ts {
