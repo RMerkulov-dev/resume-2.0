@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.1ff2d28a.css",
-    "main.js": "/static/js/main.2e961c35.js",
+    "main.js": "/static/js/main.b5036565.js",
     "static/media/car_hunter.png": "/static/media/car_hunter.6e0c3e490034541b74b2.png",
     "static/media/your_fitness.png": "/static/media/your_fitness.0cca03c2f83902816c34.png",
-    "static/media/roman merkulov.pdf": "/static/media/roman merkulov.04418596a2e4743bbe35.pdf",
     "static/media/housing.jpg": "/static/media/housing.678e920805b1ee1d9107.jpg",
     "static/media/projects.png": "/static/media/projects.9c3af74eec1130646356.png",
     "static/media/experience.png": "/static/media/experience.dd6c7252b5cbaa0bc307.png",
@@ -15,6 +14,7 @@
     "static/media/filmoteka.jpg": "/static/media/filmoteka.de79caef585ff1dcd657.jpg",
     "static/media/reason.png": "/static/media/reason.a96e86a8c2b724176049.png",
     "static/media/pro_test.png": "/static/media/pro_test.33f6277beb09817be711.png",
+    "static/media/roman merkulov.pdf": "/static/media/roman merkulov.fefc00f1ba68d330dada.pdf",
     "static/media/kapusta.jpg": "/static/media/kapusta.dc9a2f517294a069e7f6.jpg",
     "static/media/goit.png": "/static/media/goit.256d47b10d03a15635ed.png",
     "static/media/360-image.png": "/static/media/360-image.7584382959b3218ebacc.png",
@@ -25,10 +25,10 @@
     "static/media/ship.png": "/static/media/ship.7a76104617c1484f0cf8.png",
     "index.html": "/index.html",
     "main.1ff2d28a.css.map": "/static/css/main.1ff2d28a.css.map",
-    "main.2e961c35.js.map": "/static/js/main.2e961c35.js.map"
+    "main.b5036565.js.map": "/static/js/main.b5036565.js.map"
   },
   "entrypoints": [
     "static/css/main.1ff2d28a.css",
-    "static/js/main.2e961c35.js"
+    "static/js/main.b5036565.js"
   ]
 }
